@@ -3,35 +3,24 @@
 <head lang="en">
     <meta charset="UTF-8">
 
-    <!--Page Title-->
     <title>Namari - Free Landing Page Template</title>
-
-    <!--Meta Keywords and Description-->
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
-    <!--Favicon-->
     <link rel="shortcut icon" href="static/images/favicon.ico" title="Favicon"/>
-
-    <!-- Main CSS Files -->
     <link rel="stylesheet" href="static/css/style.css">
-
-    <!-- Namari Color CSS -->
     <link rel="stylesheet" href="static/css/namari-color.css">
-
-    <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
-
-    <!-- Animate CSS-->
     <link href="static/css/animate.css" rel="stylesheet" type="text/css">
-
-    <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 <body>
 
-<!-- Preloader -->
 <div id="preloader">
     <div id="status" class="la-ball-triangle-path">
         <div></div>
@@ -39,7 +28,6 @@
         <div></div>
     </div>
 </div>
-<!--End of Preloader-->
 
 <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
     <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
@@ -49,29 +37,15 @@
 </div>
 
 <div id="wrapper">
-
     <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
         <div id="header" class="nav-collapse">
             <div class="row clearfix">
                 <div class="col-1">
-
-                    <!--Logo-->
                     <div id="logo">
-
-                        <!--Logo that is shown on the banner-->
                         <img src="static/images/logo.png" id="banner-logo" alt="Landing Page"/>
-                        <!--End of Banner Logo-->
-
-                        <!--The Logo that is shown on the sticky Navigation Bar-->
                         <img src="static/images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
-                        <!--End of Navigation Logo-->
-
                     </div>
-                    <!--End of Logo-->
-
                     <aside>
-
-                        <!--Social Icons in Header-->
                         <ul class="social-icons">
                             <li>
                                 <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
@@ -99,73 +73,98 @@
                                 </a>
                             </li>
                         </ul>
-                        <!--End of Social Icons in Header-->
-
                     </aside>
-
-                    <!--Main Navigation-->
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#banner">Home</a>
+                                <a href="#banner">Página principal</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#about">Servicios</a>
                             </li>
                             <li>
-                                <a href="#gallery">Gallery</a>
+                                <a href="#gallery">Galería</a>
                             </li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#services">Por definir</a>
                             </li>
                             <li>
-                                <a href="#testimonials">Testimonials</a>
+                                <a href="#testimonials">Visor geográfico</a>
                             </li>
                             <li>
-                                <a href="#clients">Clients</a>
+                                <a href="#clients">Contactos</a>
                             </li>
                             <li>
-                                <a href="#pricing">Pricing</a>
+                                <a href="#pricing">Iniciar sesion</a>
                             </li>
                         </ul>
                     </nav>
-                    <!--End of Main Navigation-->
-
                     <div id="nav-trigger"><span></span></div>
                     <nav id="nav-mobile"></nav>
-
                 </div>
             </div>
-        </div><!--End of Header-->
+        </div>
 
-        <!--Banner Content-->
+       
         <div id="banner-content" class="row clearfix">
-
             <div class="col-38">
-
-                <div class="section-heading">
-                    <h1>A FREE AND SIMPLE LANDING PAGE</h1>
+                <!-- <div class="section-heading"> -->
+                    <!-- <h1>A FREE AND SIMPLE LANDING PAGE</h1>
                     <h2>Namari is a free landing page template you can use for your projects. It is free to use for your
-                        personal and commercial projects, enjoy!</h2>
-                </div>
-
-                <!--Call to Action-->
+                        personal and commercial projects, enjoy!</h2> -->
+                        <section id="slider">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active" style="background-image: url(img/banner.jpg);">
+                                        <div class="carousel-caption">
+                                            <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">¿Te vas a vivir<span> a otro lugar? </span></h2>
+                                            <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Te apoyo con esa actividad</span></h3>
+                                            <p data-wow-duration="1000ms" class="wow slideInRight animated">Servicio profesional</p>
+                                            
+                                            <ul class="social-links text-center">
+                                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                                                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item" style="background-image: url(img/banner.jpg);">
+                                        <div class="carousel-caption">
+                                            <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span> Trasnsporte de acarreos</span></h2>
+                                            <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">cuenta conmigo</span></h3>
+                                            <p data-wow-duration="500ms" class="wow slideInRight animated">comunicate al número de celular 3128312920</p>
+                                            
+                                            <ul class="social-links text-center">
+                                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                                                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                <!-- </div> -->
                 <a href="#" class="button">START CREATING TODAY</a>
-                <!--End Call to Action-->
-
             </div>
 
-        </div><!--End of Row-->
+          
+        </div>
+
+
+
+
     </header>
 
-    <!--Main Content Area-->
     <main id="content">
-
-        <!--Introduction-->
         <section id="about" class="introduction scrollto">
-
             <div class="row clearfix">
-
                 <div class="col-3">
                     <div class="section-heading">
                         <h3>SUCCESS</h3>
@@ -173,73 +172,52 @@
                         <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
                     </div>
-
                 </div>
-
                 <div class="col-2-3">
-
-                    <!--Icon Block-->
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
-                        <!--Icon-->
                         <div class="icon">
                             <i class="fa fa-html5 fa-2x"></i>
                         </div>
-                        <!--Icon Block Description-->
                         <div class="icon-block-description">
                             <h4>HTML5 &amp; CSS3</h4>
                             <p>Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro
                                 neglegentur iudico</p>
                         </div>
                     </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
-                        <!--Icon-->
                         <div class="icon">
                             <i class="fa fa-bolt fa-2x"></i>
                         </div>
-                        <!--Icon Block Description-->
                         <div class="icon-block-description">
                             <h4>Easy to Use</h4>
                             <p>Cu vero ipsum vim, doctus facilisi sea in. Eam ex falli honestatis repudiandae, sit
                                 detracto mediocrem disputationi</p>
                         </div>
                     </div>
-                    <!--End of Icon Block-->
+                   
 
-                    <!--Icon Block-->
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
                         <div class="icon">
                             <i class="fa fa-tablet fa-2x"></i>
                         </div>
-                        <!--Icon Block Description-->
                         <div class="icon-block-description">
                             <h4>Fully Responsive</h4>
                             <p>Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
                                 nemore vivendum</p>
                         </div>
                     </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
+                   
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
                         <div class="icon">
                             <i class="fa fa-rocket fa-2x"></i>
                         </div>
-                        <!--Icon Block Description-->
                         <div class="icon-block-description">
                             <h4>Parallax Effect</h4>
                             <p>Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
                                 nemore vivendum</p>
                         </div>
                     </div>
-                    <!--End of Icon Block-->
-
                 </div>
-
             </div>
 
 
@@ -506,16 +484,10 @@
         <!--End of Pricing Tables-->
 
     </main>
-    <!--End Main Content Area-->
-
-
-    <!--Footer-->
+  
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
-
             <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p>
-
-            <!--Social Icons in Footer-->
             <ul class="col-2 social-icons">
                 <li>
                     <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
@@ -543,11 +515,8 @@
                     </a>
                 </li>
             </ul>
-            <!--End of Social Icons in Footer-->
         </div>
     </footer>
-    <!--End of Footer-->
-
 </div>
 
 <!-- Include JavaScript resources -->
