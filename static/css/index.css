@@ -1,6 +1,6 @@
 
 
-/* .h1 {
+.h1 {
   display: inline-block;
   margin: 0 0.5rem;
   animation: backInDown 2s infinite;
@@ -8,37 +8,21 @@
 }
 
 .animate__animated.animate__backInDown {
-  --animate-duration: 5s;
+   /* animation: backOutDown 4s infinite; */
+  
+  --animate-duration: 5s; 
+  /* animation: backOutDown 2s infinite; */
+ 
 }
 
 :root {
   --animate-duration: 1000ms;
   --animate-delay: 0.5s;
-} */
-
-@keyframes backInDown {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+ 
 }
 
-.h1 {
-  display: inline-block;
-  margin: 0 0.5rem;
-  animation: backInDown 2s infinite; /* Se repite indefinidamente */
-  animation-delay: 3s; /* Espera 3 segundos antes de repetir */
-}
-
-.animate__animated.animate__backInDown {
+.animate__animated.animate__backOutDown {
   --animate-duration: 5s;
 }
 
-:root {
-  --animate-duration: 1000ms;
-  --animate-delay: 0.5s;
-}
+
