@@ -1,6 +1,11 @@
 from flask import Flask, render_template
+from iniciosesion.login import Login
+
 
 app = Flask(__name__)
+
+
+app.register_blueprint(Login) 
 
 valid = False
 app.secret_key = 'mysecretkey'
