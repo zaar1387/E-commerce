@@ -35,6 +35,7 @@
 </div>
 
 <div id="wrapper">
+ {% block body %}
     <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
         <div id="header" class="nav-collapse">
             <div class="row clearfix">
@@ -120,7 +121,7 @@
             </div>
         </div>
     </header>
-    {% block body %}
+   
     <main id="content">
         <section id="about" class="introduction scrollto">
             <div class="row clearfix">
@@ -415,7 +416,7 @@
         
 
     </main>
-    {% endblock %}
+   
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
             <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p>
@@ -448,8 +449,9 @@
             </ul>
         </div>
     </footer>
+{% endblock %}
 </div>
-
+ 
 <!-- Include JavaScript resources -->
 <script src="static/js/jquery.1.8.3.min.js"></script>
 <script src="static/js/wow.min.js"></script>

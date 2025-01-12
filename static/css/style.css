@@ -2327,6 +2327,26 @@ blockquote {
 
 }
 
+/* centra el html del login */
+
+/* html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+}
+
+.auth-form-light {
+    width: 100%; 
+    max-width: 400px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+} */
 
 
 
