@@ -1,43 +1,77 @@
 {% extends 'index/index.html' %}
 {% block body %}
 
-            <div class="row w-100 mx-0">
-                <div class="col-lg-4 mx-auto">
-                    <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-                        <div class="brand-logo text-center">
-                            <img src="static/images/logo.svg" alt="logo">
-                        </div>
-                        <h4 class="font-weight-light text-center"> Gestión gastos </h4>
-                        <form action="/login" method="POST">
-                            <div class="group material-input">
-                                <label class="text-center">Usuario</label><br>
-                                <input id="Usuario" class="form-control form-control-lg" name="Usuario" type="text"
-                                    placeholder="Usuario " required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                            </div>
-                            <div class="group material-input">
-                                <label class="text-center">Contraseña</label><br>
-                                <input Id="Contrasena" class="form-control form-control-lg" name="Contrasena"
-                                    type="password" placeholder="Contraseña" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                            </div><br>
-                            <button type="submit"
-                                class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">
-                                Iniciar sesión
-                            </button>
-                            <div class="text-center">
-                                <a href="#" class="text-primary">¿Olvidaste tu contraseña?</a>
-                            </div>
-                            <div class="text-center">
-                                ¿No tienes una cuenta? <br> <a href="/register" class="text-primary">Créala</a><br>
-                                <label>versión 0.13.3 15/12/2024</label>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+<!-- <div class="row w-100 mx-0">
+    <div class="col-lg-4 mx-auto">
+        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+            <div class="brand-logo text-center">
+                <img src="static/images/logo.svg" alt="logo">
             </div>
+            <h4 class="font-weight-light text-center"> Gestión gastos </h4>
+            <form action="/login" method="POST">
+                <div class="group material-input">
+                    <label class="text-center">Usuario</label><br>
+                    <input id="Usuario" class="form-control form-control-lg" name="Usuario" type="text"
+                        placeholder="Usuario " required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="group material-input">
+                    <label class="text-center">Contraseña</label><br>
+                    <input Id="Contrasena" class="form-control form-control-lg" name="Contrasena" type="password"
+                        placeholder="Contraseña" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div><br>
+                <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">
+                    Iniciar sesión
+                </button>
+                <div class="text-center">
+                    <a href="#" class="text-primary">¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="text-center">
+                    ¿No tienes una cuenta? <br> <a href="/register" class="text-primary">Créala</a><br>
+                    <label>versión 0.13.3 15/12/2024</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+<div class="row w-100 mx-0 text-center">
+    <div class="col-lg-6">
+        <div class="auth-form text-left py-5 px-4 px-sm-5">
+            <div class="brand-logo ">
+                <img src="static/images/logo.svg" alt="logo">
+            </div>
+            <h4 class="font-weight text-center">Gestión gastos</h4>
+            <form action="/login" method="POST">
+                <div class="group material-input">
+                    <label class="text-center">Usuario</label><br>
+                    <input id="Usuario" class="form-control form-control-lg" name="Usuario" type="text" placeholder="Usuario " required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="group material-input">
+                    <label class="text-center">Contraseña</label><br>
+                    <input id="Contrasena" class="form-control form-control-lg" name="Contrasena" type="password" placeholder="Contraseña" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div><br>
+                <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">
+                    Iniciar sesión
+                </button>
+                <div class="text-center">
+                    <a href="#" class="text-primary">¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="text-center">
+                    ¿No tienes una cuenta? <br> <a href="/register" class="text-primary">Créala</a><br>
+                    <label>versión 0.13.3 15/12/2024</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <script src="static/js/jquery.1.8.3.min.js"></script>
 <script src="static/js/wow.min.js"></script>
