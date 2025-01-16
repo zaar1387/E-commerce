@@ -8,21 +8,13 @@
 }
 
 .animate__animated.animate__backInDown {
-   /* animation: backOutDown 4s infinite; */
-  
   --animate-duration: 5s; 
-  /* animation: backOutDown 2s infinite; */
- 
 }
 
 :root {
   --animate-duration: 1000ms;
   --animate-delay: 0.5s;
  
-}
-
-.animate__animated.animate__backOutDown {
-  --animate-duration: 5s;
 }
 
 
