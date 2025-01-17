@@ -1,10 +1,46 @@
 {% extends 'index/index.html' %}
 {% block body %}
+<header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+    <div id="header" class="nav-collapse">
+        <div class="row clearfix">
+            <div class="col-1">
+                <div id="logo">
+                    <a href="/"><img src="static/images/logo-2.png" id="navigation-logo" alt="Landing Page" /></a>
+                </div>
 
-<form action="registrar.html" class="form-box animate__animated animate__backInUp">
-    <input type="text" placeholder="Username">
-    <input type="text" placeholder="Password">
-    <button type="submit">Login</button>
-</form>
+                <nav id="nav-main">
+                    <ul>
+                        <li>
+                            <a href="#about">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Galería</a>
+                        </li>
+                        <li>
+                            <a href="#services">Por definir</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials">Visor geográfico</a>
+                        </li>
+                        <li>
+                            <a href="#clients">Contactos</a>
+                        </li>
+                        <li>
+                            <a href="/login">Iniciar sesion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="content">
+    <form action="registrar.html" class="form-box animate__animated animate__backInUp">
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+</main>
 
 {% endblock %}
