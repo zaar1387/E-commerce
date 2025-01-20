@@ -35,40 +35,19 @@
             </div>
             <input type="password" class="form-control form-control-lg" id="Pass1" name="Pass1" placeholder="Crea tú password">
             <input type="password" class="form-control form-control-lg" id="Pass2" name="Pass2" placeholder="confirma tú password">
-            <div id="panel_captcha" style="display: block;">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="form-group">
-                      <img id="captcha_image" src="" alt="captcha">
-                    </div>
-                  </div>
-                  <div class="col-lg-1">
-                    <div class="form-group"></div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group text-center">
-                      <input type="text" id="captcha-input" name="captcha-input" class="form-control form-control-lg" width="20px"
-                        height="20px" placeholder="Escribe captcha">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <button type="submit" class="btn btn-outline-secondary btn-md"
+            <input type="text" id="captcha-input" name="captcha-input" class="form-control" width="20px" height="20px"
+              placeholder="Escribe captcha">
+                <table>
+                  <tr>
+                    <th> <button type="submit" class="btn btn-outline-secondary btn-md"
                         style="background: linear-gradient(179deg, rgba(3,43,87,1) 25%, rgb(0 106 141) 62%) !important;"><i
-                          class="mdi mdi-skip-next"> Validar captcha</i></button>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <button type="submit" id="refresh-captcha" class="btn btn-outline-secondary btn-md"
+                          class="mdi mdi-skip-next"> Validar captcha</i></button></th>
+                    <th><button type="submit" id="refresh-captcha" class="btn btn-outline-secondary btn-md"
                         style="background: linear-gradient(179deg, rgba(3,43,87,1) 25%, rgb(0 106 141) 62%) !important;"><i
-                          class="mdi mdi-skip-next"> Refresh CaPtChA</i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                          class="mdi mdi-skip-next"> Refresh CaPtChA</i></button></th>
+                
+                  </tr>
+                </table>
             <button type="submit">Login</button>
         </form>
     </main>
