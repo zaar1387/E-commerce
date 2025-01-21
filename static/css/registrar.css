@@ -128,6 +128,21 @@ header{
 
 
 /* crea espacios entre los select option  */
-.form-control {
-    margin-bottom: 10px; /* Ajusta el valor según sea necesario */
+.form-box select {
+    width: 100%; /* Ajusta el ancho como desees */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde similar al input */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #3a3f4b; /* Color de fondo */
+    appearance: none; /* Elimina el estilo por defecto del select */
+    -webkit-appearance: none; /* Para navegadores webkit */
+    -moz-appearance: none; /* Para navegadores Firefox */
+    margin-bottom: 30px; /* espacios entre select */
+    /* background: #ccc;  */
+}
+
+/* Opcional: Estilo para las opciones */
+.form-box select option {
+    padding: 10px; /* Espaciado interno para opciones */
 }
