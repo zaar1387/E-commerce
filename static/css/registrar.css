@@ -127,11 +127,11 @@ header{
 }
 
 
-/* crea espacios entre los select option  */
+/* aplica estilo a los select option  */
 .form-box select {
     width: 100%; /* Ajusta el ancho como desees */
     padding: 10px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde similar al input */
+    border: 1px solid #fff; /* Borde similar al input */
     border-radius: 25px; /* Bordes redondeados */
     font-size: 16px; /* Tamaño de fuente */
     background-color: #3a3f4b; /* Color de fondo */
