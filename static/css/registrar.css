@@ -71,7 +71,7 @@ header{
     padding: 20px;
     margin: 20px auto;
     border: none;
-    color: #fff;
+    color: #000000;  /*  cambia color del texto escrito en los campos de texto */
 }
 .form-box button[type="submit"]{
     background: none;
@@ -80,6 +80,7 @@ header{
     margin: 20px auto;
     border: none;
     color: #fff;
+    background: linear-gradient(179deg, rgba(3, 43, 87, 1) 25%, rgb(0, 106, 141) 62%);
 }
 
 .form-box input[type="text"],
@@ -93,10 +94,12 @@ header{
 }
 
 .form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus,
+.form-box select[type="option"]:focus,
 
 
 .form-box button[type="submit"]{
-    border: 1px solid #fff;
+    border: 1px solid #000000;
     border-radius: 25px;
     width: 70%;
     font-size: 14px;
@@ -145,4 +148,65 @@ header{
 /* Opcional: Estilo para las opciones */
 .form-box select option {
     padding: 10px; /* Espaciado interno para opciones */
+}
+
+
+/* Estilo básico para el cuerpo y el contenedor */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Color de fondo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* Estilo para el formulario */
+.form-box {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los botones */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+/* Botones específicos */
+.btn {
+    background: linear-gradient(179deg, rgba(3, 43, 87, 1) 25%, rgb(0, 106, 141) 62%);
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    .form-box {
+        width: 90%; /* El formulario ocupa el 90% del ancho en pantallas pequeñas */
+    }
+
+    nav a {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño en móviles */
+    }
 }

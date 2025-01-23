@@ -78,11 +78,21 @@ header{
     margin: 50px auto;
 }
 
+.form-box {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
 .form-title{
     width: 100%;
     padding: 20px;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 .form-box input[type="text"],
@@ -93,16 +103,19 @@ header{
     padding: 20px;
     margin: 20px auto;
     border: none;
-    color: #fff;
+    border-radius: 25px; /*  redondea los bordes del boton */
+    color: #000000;  /*  cambia color del texto escrito en los campos de texto */
+   
 }
 
 .form-box input[type="text"],
 .form-box input[type="password"]{
-    border: 1px solid #fff;
+    border: 1px solid #000000;
     border-radius: 25px;
     font-size: 14px;
     text-align: center;
     outline: none;
+    
 }
 
 .form-box input[type="text"]:focus,
@@ -111,12 +124,17 @@ header{
     transition: 0.35s;
 }
 
+
+/* cambia el color de la palabra login a blanco */
 .form-box button[type="submit"]{
-    border: 1px solid #fff;
-    border-radius: 25px;
-    width: 70%;
-    font-size: 14px;
-    outline: none;
+    border: 1px solid #000000;
+    background: none;
+    width: 75%;
+    padding: 20px;
+    margin: 20px auto;
+    border: none;
+    color: #fff;
+    background: linear-gradient(179deg, rgba(3, 43, 87, 1) 25%, rgb(0, 106, 141) 62%);
 }
 
 .form-box button[type="submit"]:hover{
@@ -126,15 +144,17 @@ header{
     cursor: pointer;
 }
 
+/* cambia el todo de color del texto: ¿Olvidaste tú contraseña?  */
 .form-box a{
     color: #fff;
     margin-bottom: 10px;
     text-decoration: none;
-    color: rgba(200, 198, 204, 100);
+    color: rgb(160, 156, 167);
 }
 
+/* genera efecto cambiando de color más intenso del texto: ¿Olvidaste tú contraseña?  */
 .form-box a:hover{
-    color: #fff;
+    color: #101010;
 }
 
 .form{
@@ -152,7 +172,13 @@ header{
    
   }
   
-  /* .animate__animated.animate__backOutDown {
-    --animate-duration: 5s;
-  }
-   */
+ /* Estilo responsivo */
+@media (max-width: 600px) {
+    .form-box {
+        width: 90%; /* El formulario ocupa el 90% del ancho en pantallas pequeñas */
+    }
+
+    nav a {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño en móviles */
+    }
+}
