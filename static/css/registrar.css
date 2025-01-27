@@ -63,6 +63,7 @@ header{
 }
 
 .form-box input[type="text"],
+.form-box input[type="number"],
 .form-box select[type="option"],
 .form-box input[type="password"],
 .form-box input[type="Nombres"]{
@@ -84,6 +85,7 @@ header{
 }
 
 .form-box input[type="text"],
+.form-box input[type="number"],
 .form-box select[type="option"],
 .form-box input[type="password"]{
     border: 1px solid #fff;
@@ -94,6 +96,7 @@ header{
 }
 
 .form-box input[type="text"]:focus,
+.form-box input[type="number"]:focus,
 .form-box input[type="password"]:focus,
 .form-box select[type="option"]:focus,
 
@@ -128,6 +131,22 @@ header{
     animation: backInUp 2s infinite;
     animation-delay: 3s; 
 }
+
+
+
+.animate__animated.animate__backInUp {
+    --animate-duration: 5s; 
+  }
+  
+  :root {
+    --animate-duration: 1000ms;
+    --animate-delay: 0.5s;
+   
+  }
+
+
+
+
 
 
 /* aplica estilo a los select option  */
@@ -210,3 +229,26 @@ button {
         font-size: 1.2em; /* Tamaño de fuente más pequeño en móviles */
     }
 }
+
+/* ajustando tamaño botones captcha */
+#Validar-captcha, #refresh-captcha {
+    width: 120px; /* ancho del botón */
+    height: 35px; /* alto del botón */
+    font-size: 10px; /* tamaño de la fuente */
+    padding: 10px; /* espacio entre el texto y el borde del botón */
+  }
+
+  #boton_gral {
+    width: 220px;
+    height: 55px;
+    font-size: 15px; 
+    padding: 10px; 
+
+  }
+
+
+  /* [name="boton_gral"]{
+    width: 10000;
+    height: 55px; 
+    font-size: 30px; 
+    padding: 10px; } */

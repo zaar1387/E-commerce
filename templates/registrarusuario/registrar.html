@@ -12,12 +12,43 @@
     </header>
     <main id="content">
         <form action="registrar.html" class="form-box animate__animated animate__backInUp">
-            <input type="text" class="form-control form-control-lg" id="Nombres" name="Nombres" placeholder="escribe tus nombres">
-            <input type="text" class="form-control form-control-lg" id="Apellidos" name="Apellidos" placeholder="escribe tus apellidos">
-            <input type="text" class="form-control form-control-lg" id="Usuario" name="Usuario" placeholder="crea tú usuario">
-            <input type="text" class="form-control form-control-lg" id="Correo_electronico" name="Correo_electronico" placeholder="correo electrónico">
-            <input type="text" class="form-control form-control-lg" id="Correo_electronico1" name="Correo_electronico1" placeholder="confirma correo">
-            <input type="text" class="form-control form-control-lg" id="Telefono_celular" name="Telefono_celular" placeholder="teléfono celular">
+            <div clas="row">
+                <div class="col-md-4">
+                    <label class="form-control text-center">Nombres</label>
+                    <input type="text" class="form-control form-control-lg" id="Nombres" name="Nombres"
+                        placeholder="escribe tus nombres">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-control text-center">Apellidos</label>
+                    <input type="text" class="form-control form-control-lg" id="Apellidos" name="Apellidos"
+                        placeholder="escribe tus apellidos">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-control text-center">Usuario</label>
+                    <input type="text" class="form-control form-control-lg" id="Usuario" name="Usuario"
+                        placeholder="crea tú usuario">
+                </div>
+            </div>
+            <div clas="row">
+                <div class="col-md-4">
+                    <label class="form-control text-center">Correo electrónico</label>
+                    <input type="text" class="form-control form-control-lg" id="Correo_electronico" name="Correo_electronico" placeholder="correo electrónico">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-control text-center">confirma correo</label>
+                    <input type="text" class="form-control form-control-lg" id="Correo_electronico1" name="Correo_electronico1" placeholder="confirma correo">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-control text-center">Teléfono celular</label>
+                    <input type="number" class="form-control form-control-lg" id="Telefono_celular" name="Telefono_celular" placeholder="teléfono celular">
+                </div>
+            </div>
+           
+           
+           
+           
+            
+            
             <div class="form-control">
                 <select name="Id_pais" class="js-example-basic-single w-100" id="Id_pais" style="color: aliceblue;">
                     <option id="Id_pais" value="0">Selecciona país...</option>
@@ -39,14 +70,14 @@
               placeholder="Escribe captcha">
                 <table>
                   <tr>
-                    <th> <button type="submit">
-                        Validar captcha</button>
+                    <th> <button type="submit" id="Validar-captcha">
+                        Validar</button>
                     </th>
-                    <th><button type="submit" id="refresh-captcha">Refresh captcha</button>
+                    <th><button type="submit" id="refresh-captcha">Refresh</button>
                     </th>
                   </tr>
                 </table>
-            <button type="submit">Registrar</button>
+            <button type="submit" name="boton_gral" id="idboton">Registrar usuario</button>
         </form>
     </main>
    
