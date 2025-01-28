@@ -224,7 +224,6 @@ button {
     .form-box {
         width: 90%; /* El formulario ocupa el 90% del ancho en pantallas pequeñas */
     }
-
     nav a {
         font-size: 1.2em; /* Tamaño de fuente más pequeño en móviles */
     }
@@ -236,19 +235,22 @@ button {
     height: 35px; /* alto del botón */
     font-size: 10px; /* tamaño de la fuente */
     padding: 10px; /* espacio entre el texto y el borde del botón */
-  }
+}
 
-  #boton_gral {
+#boton_gral {
     width: 220px;
     height: 55px;
     font-size: 15px; 
     padding: 10px; 
+}
 
-  }
 
 
-  /* [name="boton_gral"]{
-    width: 10000;
-    height: 55px; 
-    font-size: 30px; 
-    padding: 10px; } */
+/* Opcional: Estilo para las opciones */
+/* .form-control Nombres {
+    padding: 10px; 
+}
+
+.form-control Apellidos {
+    padding: 10px; 
+} */
