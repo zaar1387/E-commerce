@@ -110,7 +110,7 @@ header{
 
 .form-box input[type="text"],
 .form-box input[type="password"]{
-    border: 1px solid #000000;
+    border: 0px solid #000000;
     border-radius: 25px;
     font-size: 14px;
     text-align: center;
