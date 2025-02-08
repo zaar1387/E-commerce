@@ -46,13 +46,15 @@ header{
 
 .form-box{
     width: 25%;
-    background: #3a3f4b; /*cambia el color de fondo  */
-    display: flex;
+    background: #3a3f4b; 
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px auto;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-title{
@@ -197,6 +199,7 @@ nav a {
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
 }
 
 .form-control {
@@ -245,12 +248,15 @@ button {
 }
 
 
-
-/* Opcional: Estilo para las opciones */
-/* .form-control Nombres {
-    padding: 10px; 
+#quitando espacios entre campos de texto
+.row {
+    margin: 0; /* Elimina el margen del contenedor */
 }
 
-.form-control Apellidos {
-    padding: 10px; 
-} */
+.col-mg-4 {
+    padding: 0; /* Elimina el padding de las columnas */
+}
+
+.form-control {
+    margin-bottom: 0; /* Elimina el margen inferior de los campos */
+}

@@ -13,70 +13,43 @@
     <main id="content">
         <form action="registrar.html" class="form-box animate__animated animate__backInUp">
             
-            <!-- <label class="form-control text-center">Nombres:</label><br>
-            <input type="text" class="form-control" id="Nombres" name="Nombres" placeholder="escribe tus nombres">
-            
-            <label class="form-control text-center">Apellidos:</label>
-            <input type="text" class="form-control" id="Apellidos" name="Apellidos" placeholder="escribe tus apellidos">
-
-            <label class="form-control text-center">Usuario</label>
-            <input type="text" class="form-control" id="Usuario" name="Usuario"
-                placeholder="crea tú usuario"> -->
-
-            <div clas="row">
-                <div class="col-gl-4">
-                    <label class="form-control text-center">Nombres:</label>
+                    <label class="form-control">Nombres:</label>
                     <input type="text" class="form-control" id="Nombres" name="Nombres" placeholder="escribe tus nombres">
-                </div>
-                <div class="col-gl-4">
-                    <label class="form-control text-center">Apellidos:</label>
+                
+                    <label class="form-control">Apellidos:</label>
                     <input type="text" class="form-control" id="Apellidos" name="Apellidos" placeholder="escribe tus apellidos">
-                </div>
-                <div class="col-gl-4">
-                    <label class="form-control text-center">Usuario</label>
-                    <input type="text" class="form-control" id="Usuario" name="Usuario"
-                        placeholder="crea tú usuario">
-                </div>
-            </div>
-            <div clas="row">
-                <div class="col-md-4">
-                    <label class="form-control text-center">Correo electrónico</label>
-                    <input type="text" class="form-control form-control-lg" id="Correo_electronico" name="Correo_electronico" placeholder="correo electrónico">
-                </div>
-                <div class="col-md-4">
-                    <label class="form-control text-center">confirma correo</label>
-                    <input type="text" class="form-control form-control-lg" id="Correo_electronico1" name="Correo_electronico1" placeholder="confirma correo">
-                </div>
-                <div class="col-md-4">
+                
+                    <label class="form-control">Usuario</label>
+                    <input type="text" class="form-control" id="Usuario" name="Usuario" placeholder="crea tú usuario">
+              
+                    <label class="form-control">Correo electrónico</label>
+                    <input type="text" class="form-control" id="Correo_electronico" name="Correo_electronico" placeholder="correo electrónico">
+                
+                    <label class="form-control">confirma correo</label>
+                    <input type="text" class="form-control" id="Correo_electronico1" name="Correo_electronico1" placeholder="correo electrónico">
+
                     <label class="form-control text-center">Teléfono celular</label>
-                    <input type="number" class="form-control form-control-lg" id="Telefono_celular" name="Telefono_celular" placeholder="teléfono celular">
-                </div>
-            </div>
-           
-           
-           
-           
-            
-            
-            <div class="form-control">
-                <select name="Id_pais" class="js-example-basic-single w-100" id="Id_pais" style="color: aliceblue;">
-                    <option id="Id_pais" value="0">Selecciona país...</option>
-                </select>
-            </div>
-            <div class="form-control">
-                <select name="Id_dpto" id="Id_dpto" class="js-example-basic-single w-100" style="color: aliceblue;">
-                    <option id="Id_dpto" value="0">Selecciona departamento...</option>
-                </select>
-            </div>
-            <div class="form-control">
-                <select name="Id_Mpios" id="Id_Mpios" class="js-example-basic-single w-100" style="color: aliceblue;">
-                    <option id="Id_Mpios" value="0">Selecciona municipio</option>
-                </select>
-            </div>
-            <input type="password" class="form-control form-control-lg" id="Pass1" name="Pass1" placeholder="crea tú password">
-            <input type="password" class="form-control form-control-lg" id="Pass2" name="Pass2" placeholder="confirma tú password">
-            <input type="text" id="captcha-input" name="captcha-input" class="form-control" width="20px" height="20px"
-              placeholder="Escribe captcha">
+                    <input type="number" class="form-control" id="Telefono_celular" name="Telefono_celular" placeholder="teléfono celular">
+                    
+                    <select name="Id_pais" class="js-example-basic-single w-100" id="Id_pais" style="color: aliceblue;">
+                        <option id="Id_pais" value="0">País...</option>
+                    </select>
+                    
+                    <select name="Id_dpto" id="Id_dpto" class="js-example-basic-single w-100" style="color: aliceblue;">
+                        <option id="Id_dpto" value="0">Departamento...</option>
+                    </select>
+                    
+                    <select name="Id_Mpios" id="Id_Mpios" class="js-example-basic-single w-100" style="color: aliceblue;">
+                        <option id="Id_Mpios" value="0">Municipio</option>
+                    </select>
+
+                    <label class="form-control">crea tú password</label>                    
+                    <input type="password" class="form-control form-control-lg" id="Pass1" name="Pass1" placeholder="password">
+                    <label class="form-control">confirma password</label> 
+                    <input type="password" class="form-control form-control-lg" id="Pass2" name="Pass2" placeholder="confirma password">
+                    <label class="form-control">captcha</label> 
+                    <input type="text" id="captcha-input" name="captcha-input" class="form-control" width="20px" height="20px"
+                        placeholder="escribe el captcha">
                 <table>
                   <tr>
                     <th> <button type="submit" id="Validar-captcha">
