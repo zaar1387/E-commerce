@@ -1,0 +1,35 @@
+{% extends 'index/index.html' %}
+{% block body %}
+
+<link rel="stylesheet" href="static/css/olvidocontrasenia.css">
+<body>
+    <header>
+        <nav style="text-align: center;">
+            <ul class="animate__animated animate__backInUp">
+                <a style="text-align: center;">Modificar contraseña</a>
+            </ul>
+        </nav>
+        
+        <nav class="barra-nav animate__animated animate__backInUp text-align-right">
+            <ul class="animate__animated animate__backInUp">
+                <a href="/login">Regresar</a>&nbsp;&nbsp;
+            </ul>
+        </nav>
+        
+    </header>
+    <main id="content">
+        <form action="olvidocontrasenia.html" id="idCorreoelectronico" style="display: block;" class="form-box text-center animate__animated animate__backInUp">
+                    <label class="form-control text-center"><strong>Correo electrónico registrado</strong></label>
+                    <input type="text" class="form-control text-center" id="Correo_electronico" name="Correo_electronico" placeholder="ej: alma@gmail.com">
+                    <button type="submit" class="form-control text-center" id="botton_small">Solicitar código</button>
+        </form>
+        <form action="olvidocontrasenia.html" id="idCodigocorreo" style="display: block;"
+            class="form-box text-center animate__animated animate__backInUp">
+            <label class="form-control"><strong>Código obtenido</strong></label>
+            <input type="text" class="form-control" id="idCodigocorreo" name="idCodigocorreo" placeholder="Ej: Hj#?!$¡34asw">
+            <button type="submit" id="botton_small">Validar código</button>
+        </form>
+    </main>
+   
+</body>
+{% endblock %}
