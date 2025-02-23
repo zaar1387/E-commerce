@@ -45,7 +45,7 @@ body{
 header{
     width: 100%;
     padding: 20px;
-    background: #2f3542;
+    /* background: #f3f3f5; */
 }
 
 .barra-nav ul{
@@ -61,7 +61,7 @@ header{
 
 .barra-nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #050000fd;
 }
 
 .barra-nav ul li a:hover{
@@ -146,10 +146,10 @@ header{
 
 /* cambia el todo de color del texto: ¿Olvidaste tú contraseña?  */
 .form-box a{
-    color: #fff;
+    color: #050000;
     margin-bottom: 10px;
     text-decoration: none;
-    color: rgb(160, 156, 167);
+    color: rgb(5, 1, 14);
 }
 
 /* genera efecto cambiando de color más intenso del texto: ¿Olvidaste tú contraseña?  */

@@ -1,0 +1,156 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+   
+    background-size: cover;
+  
+}
+
+
+.navbar{
+    padding: 15px;
+    display: block;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    font-size: 2em;
+    width: 100%;
+} 
+.menu, .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background-color: rgba(0,0,0,0.40);
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s;
+}
+.menuLink{
+    display: block;
+    padding: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: 500;
+}
+.menuLink:hover{
+    background-color: rgba(15, 15, 15, 0.6);
+
+}
+.submenu .menuLink:hover{
+    background-color: rgba(10, 10, 10, 0.6);
+}
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.submenu .menuLink{
+    background-color: rgba(10, 10, 10, 0.4);
+    padding-left: 40px;
+}
+.mostrar{
+    margin-left: 0;
+}
+
+@media(min-width:1024px) {
+    .navbar{
+        display: none;
+    }
+    .menu{
+        margin-left: 0;
+        display: flex;
+        
+    }
+    .contenedorSubmenu{
+        position: relative;
+    }
+    .submenu{
+        position: absolute; 
+        top: 60px;
+        width: 180px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .contenedorSubmenu:hover .submenu{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+ /* aplicando responsive design a la barra de navegación. */
+
+ /* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+.nav {
+    display: flex;
+}
+.menu {
+    list-style: none;
+    display: flex;
+}
+.menuLi {
+    position: relative;
+}
+.menuLink {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.menuLink:hover {
+    background-color: #575757;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+}
+.contenedorSubmenu:hover .submenu {
+    display: block;
+}
+.container {
+    padding: 20px;
+}  */
+
+/* 
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        display: none; 
+        width: 100%;
+        background-color: #333;
+    }
+    .menuLi {
+        text-align: center;
+    }
+    #btnMenu {
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+    }
+    #btnMenu.active + .nav .menu {
+        display: flex; 
+    }
+} */
