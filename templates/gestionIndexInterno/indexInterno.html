@@ -1,0 +1,52 @@
+{% extends 'index/index.html' %}
+{% block body %}
+
+<body>
+    <!-- <header style="justify-items: center;"> -->
+        <header>
+        <span class="navbar" id="btnMenu"><i class="fa fa-bars"></i></span>
+        <nav class="nav">
+            <ul class="menu" id="menu">
+                <li class="menuLi"><a href="#" class="menuLink">Inicio</a></li>
+                <li class="menuLi"><a href="#" class="menuLink">Servicios</a></li>
+                <li class="menuLi"><a href="#" class="menuLink">Galeria</a></li>
+                <li class="menuLi"><a href="#" class="menuLink">Otras actividades</a></li>
+                <li class="menuLi"><a href="#" class="menuLink">Visor geogràfico</a></li>
+                <li class="menuLi"><a href="#" class="menuLink">Contatos</a></li>
+                <li class="menuLi contenedorSubmenu">
+                    <a href="#" class="menuLink btnSubmenu">Productos <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menuLi"><a href="#" class="menuLink">Producto1</a></li>
+                        <li class="menuLi"><a href="#" class="menuLink">Producto2</a></li>
+                        <li class="menuLi"><a href="#" class="menuLink">Producto3</a></li>
+                        <li class="menuLi"><a href="#" class="menuLink">Producto4</a></li>
+                    </ul>
+                </li>
+               
+                <li class="menuLi"><a href="#" class="menuLink">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <row>
+                <div class="col-md-12">
+                    <h1>Titulo de la pagina</h1>
+                </div>
+            </row>
+        </section>
+    </main>
+    
+    <footer>
+        
+    </footer>
+
+    <script src="static/js/jsmenuIndexPpal/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+{% endblock %}

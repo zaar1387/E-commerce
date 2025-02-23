@@ -21,7 +21,7 @@ body{
 header{
     width: 100%;
     padding: 20px;
-    background: #2f3542;
+    /* background: #ffffff; */
 }
 
 .barra-nav ul{
@@ -157,7 +157,7 @@ header{
     padding: 10px; /* Espaciado interno */
     border: 1px solid #fff; /* Borde similar al input */
     border-radius: 25px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de fuente */
+    font-size: 10px; /* Tamaño de fuente */
     background-color: #3a3f4b; /* Color de fondo */
     appearance: none; /* Elimina el estilo por defecto del select */
     -webkit-appearance: none; /* Para navegadores webkit */
@@ -186,7 +186,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: rgb(8, 0, 0);
     text-decoration: none;
     font-size: 1.5em;
 }

@@ -22,7 +22,7 @@ figure, p {
 }
 
 a {
-    color: #fff;
+    color: #000000;
 	
     -webkit-transition: all .3s ease-in 0s;
        -moz-transition: all .3s ease-in 0s;
@@ -60,9 +60,9 @@ h4, h5, h6 {
    clear: both;
 }
  
-.clear {
+/* .clear {
    *zoom: 1;
-}
+} */
 
 span.color {
 	color: #0feb9e;
@@ -73,7 +73,7 @@ body > section,
 	padding: 70px 0;
 }
 
-.sec-title {}
+/* .sec-title {} */
 
 .sec-title h2 {
   color: #0eb493;
@@ -497,7 +497,7 @@ top: -8px;
 ==========================================*/
 
 #facts {
-	background-image: url("../img/parallax/city.jpg");
+	/* background-image: url("../img/parallax/city.jpg"); */
 	background-color: rgba(6,32,51,.8);
 	background-attachment: fixed !important;
 	background-position: center center;
@@ -569,7 +569,7 @@ top: -8px;
   line-height: 24px;
 }
 
-.contact-form {}
+/* .contact-form {} */
 
 .contact-form h3 {
   color: #062033;
@@ -693,8 +693,8 @@ label.error {
   line-height: 24px;
 }
 
-.footer-single ul {
-  }
+/* .footer-single ul {
+  } */
 
 .footer-single li {
   line-height: 32px;
