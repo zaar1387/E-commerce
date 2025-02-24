@@ -1,7 +1,7 @@
 *{
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'fontAwesome';
 }
 body{
     margin: 0;
@@ -24,11 +24,13 @@ body{
     padding: 0;
     margin: 0;
 }
+/* 
+Cambia el color de fondo de la barra de navegación a un color gris claro. */
 .menu{
-    background-color: rgba(0,0,0,0.40);
+    background-color: hsl(0, 14%, 99%);
     width: 100%;
     margin-left: -100%;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 .menuLink{
     display: block;
@@ -37,8 +39,11 @@ body{
     text-decoration: none;
     font-weight: 500;
 }
+
+/* modfica el color de fondo de los elementos de la barra de navegación al pasar el cursor sobre ellos. */ */
 .menuLink:hover{
-    background-color: rgba(15, 15, 15, 0.6);
+    /* background-color: rgba(15, 15, 15, 0.6); */
+    background-color:  rgb(147 134 134 / 60%);
 
 }
 .submenu .menuLink:hover{
@@ -50,7 +55,7 @@ body{
     transition: all 0.3s;
 }
 .submenu .menuLink{
-    background-color: rgba(10, 10, 10, 0.4);
+    background-color: rgba(247, 240, 240, 0.4);
     padding-left: 40px;
 }
 .mostrar{
@@ -83,6 +88,20 @@ body{
         visibility: visible;
     }
 }
+
+
+.animate__animated.animate__backInUp {
+    --animate-duration: 5s; 
+  }
+  
+  :root {
+    --animate-duration: 1000ms;
+    --animate-delay: 0.5s;
+   
+  }
+
+
+
 
  /* aplicando responsive design a la barra de navegación. */
 
