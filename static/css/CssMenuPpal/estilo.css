@@ -34,10 +34,10 @@ Cambia el color de fondo de la barra de navegación a un color gris claro. */
 }
 .menuLink{
     display: block;
-    padding: 20px;
-    font-size: 1.2em;
+    padding: 15px;
+    font-size: 1em;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 100;
 }
 
 /* modfica el color de fondo de los elementos de la barra de navegación al pasar el cursor sobre ellos. */ */
@@ -88,6 +88,24 @@ Cambia el color de fondo de la barra de navegación a un color gris claro. */
         visibility: visible;
     }
 }
+
+
+/* encoger menu al hacer scroll */
+
+.submenu {
+    display: none; /* Ocultar el submenu por defecto */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .animate__animated.animate__backInUp {
