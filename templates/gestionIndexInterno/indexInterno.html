@@ -3,7 +3,7 @@
 
 <body>
     <!-- <header style="justify-items: center;"> -->
-        <header class="animate__animated animate__backInUp">
+        <header style="justify-items: center;" class="animate__animated animate__backInUp">
         <span class="navbar" id="btnMenu"><i class="fa fa-bars"></i></span>
         <nav class="nav">
             <ul class="menu" id="menu">
@@ -45,7 +45,16 @@
 </body>
 </html>
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const btnSubmenu = document.querySelector('.btnSubmenu');
+        const submenu = document.querySelector('.submenu');
+        btnSubmenu.addEventListener('click', function(event) {
+            event.preventDefault(); // Evitar el comportamiento por defecto del enlace
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block'; // Alternar la visibilidad del submenu
+        });
+    });
+</script>
 
 
 
