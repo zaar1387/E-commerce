@@ -13,7 +13,6 @@ app.register_blueprint(Registrar)
 app.register_blueprint(Olvidocontrasenia)
 app.register_blueprint(IndexInterno)    
 
-
 valid = False
 app.secret_key = 'mysecretkey'
 
