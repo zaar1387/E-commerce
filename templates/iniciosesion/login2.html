@@ -1,0 +1,49 @@
+{% extends 'index/index.html' %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+
+<body>
+    <header>
+        <nav class="barra-nav">
+            <ul class="animate__animated animate__backInUp">
+                <a href="/">Regresar</a>&nbsp;&nbsp;
+                <a href="#">Quienes somos?</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <form action="login.html" class="form-box animate__animated animate__backInUp">
+        <h1 class="form-title">Iniciar sesion</h1>
+        <input type="text" placeholder="usuario">
+        <input type="password" placeholder="contraseña">
+        <button type="submit">Acceder</button>
+        <table>
+            <tr>
+                <th>
+                    <a href="/olvido">¿Olvidaste tú contraseña?</a><br>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="/registrar">¿No tienes una cuenta?, registrate aquí</a>
+                </th>
+            </tr>
+        </table>
+        
+       
+    </form>
+</body>
+
+</html>
+
+
+{% endblock %}

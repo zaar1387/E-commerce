@@ -1,49 +1,86 @@
 {% extends 'index/index.html' %}
 {% block body %}
 
-<!DOCTYPE html>
-<html lang="es">
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="static/css/login.css">
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" href="static\css\CssLogin\stylelogin.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-    <header>
-        <nav class="barra-nav">
-            <ul class="animate__animated animate__backInUp">
-                <a href="/">Regresar</a>&nbsp;&nbsp;
-                <a href="#">Quienes somos?</a>
-            </ul>
-        </nav>
-    </header>
-    
-    <form action="login.html" class="form-box animate__animated animate__backInUp">
-        <h1 class="form-title">Iniciar sesion</h1>
-        <input type="text" placeholder="usuario">
-        <input type="password" placeholder="contraseña">
-        <button type="submit">Acceder</button>
-        <table>
-            <tr>
-                <th>
-                    <a href="/olvido">¿Olvidaste tú contraseña?</a><br>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="/registrar">¿No tienes una cuenta?, registrate aquí</a>
-                </th>
-            </tr>
-        </table>
-        
-       
-    </form>
+    <div class="container">
+        <div class="form-box login">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Usuario" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Olvidaste tú contraseña?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>Inicia sesión con tú red social</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <form action="#">
+                <h1>Registro</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Usuario" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <i class='bx bxs-envelope' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+                <p>Registrate con tú red social</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hola, Bienvenido!</h1>
+                <p>No tienes una cuenta?</p>
+                <button class="btn register-btn">Registrate</button>
+            </div>
+
+            <div class="toggle-panel toggle-right">
+                <h1>Bienvenido nuvamente!</h1>
+                <p>Realmente tienes una cuenta?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/jslogin/main.js"></script>
 </body>
-
 </html>
-
 
 {% endblock %}
