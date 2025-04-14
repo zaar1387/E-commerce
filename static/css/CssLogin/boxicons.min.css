@@ -2,7 +2,7 @@
     font-family: boxicons;
     font-weight: 400;
     font-style: normal;
-    src: url(../fonts/boxicons.eot);
+    /* src: url(../fonts/boxicons.eot); */
     src: url(../fonts/boxicons.eot) format('embedded-opentype'), url(../fonts/boxicons.woff2) format('woff2'), url(../fonts/boxicons.woff) format('woff'), url(../fonts/boxicons.ttf) format('truetype'), url(../fonts/boxicons.svg?#boxicons) format('svg')
 }
 
@@ -6979,3 +6979,12 @@
 .bxs-zoom-out:before {
     content: "\ef0b"
 }
+
+
+
+
+
+
+
+
+
