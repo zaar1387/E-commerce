@@ -1,16 +1,15 @@
-{% extends 'index/index.html' %}
-{% block body %}
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup Form</title>
+    <link rel="shortcut icon" href="static/images/favicon.ico" title="Favicon" />
     <link rel="stylesheet" href="static/css/CssLogin/stylelogin.css">
     <link href='static/css/CssLogin/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -32,11 +31,10 @@
                 <button type="submit" class="btn">Login</button>
                 <p>Inicia sesión con tú red social</p>
                 <div class="social-icons">
-                    <a href="#"><i class='bx bxl-google'></i></a>
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-1x"></i></a>
+                    <a href="#"><i class="fa fa-google fa-1x"></i></a>
                 </div>
+                <a href="/"><i class="fa fa-arrow-left fa-1x"> volver</i></a>
             </form>
         </div>
 
@@ -58,14 +56,15 @@
                 <button type="submit" class="btn">Registrarse</button>
                 <p>Registrate con tú red social</p>
                 <div class="social-icons">
-                    <a href="#"><i class='bx bxl-google'></i></a>
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-1x"></i></a>
+                    <a href="#"><i class="fa fa-google fa-1x"></i></a>
                 </div>
+                <a href="/"><i class="fa fa-arrow-left fa-1x"> volver</i></a>
             </form>
+
         </div>
 
+        
         <div class="toggle-box">
             <div class="toggle-panel toggle-left">
                 <h1>Hola, Bienvenido!</h1>
@@ -74,8 +73,8 @@
             </div>
 
             <div class="toggle-panel toggle-right">
-                <h1>Bienvenido nuvamente!</h1>
-                <p>Realmente tienes una cuenta?</p>
+                <h1></h1>
+                <h2>Bienvenido</h2>
                 <button class="btn login-btn">Login</button>
             </div>
         </div>
@@ -85,5 +84,3 @@
 </body>
 
 </html>
-
-{% endblock %}
