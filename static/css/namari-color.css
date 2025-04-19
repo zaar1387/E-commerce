@@ -26,13 +26,13 @@ a, .la-ball-triangle-path {
 }
 
 a:hover, #header.nav-solid nav a:hover {
-    color:#d2b356;
+    color:#fff;
 }
 
 /* Default Icon Color */
 
 .icon i {
-    color:#d2b356;
+    color:#fff;
 }
 
 /* Border Color */
