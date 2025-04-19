@@ -1,0 +1,7 @@
+-----
+
+config ruta visualice mapa hmtl
+
+ <!-- src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
+                    height="800px" style="border:none;"></iframe>
+
