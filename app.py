@@ -40,6 +40,21 @@ def default():
 
 def generar_mapa():
     try:
+        # cur = mysql.connection.cursor()
+        # query = "SELECT a.lat, a.lng, a.Fecha_graba FROM registro_coordenadas a"
+        # cur.execute(query)
+        # results = query.fetchall()
+        # logging.debug(f"Datos obtenidos de la base de datos: {results}")
+        # if results:
+        #     for (latitud, longitud, fecha) in results:
+        #         logging.debug(f"Añadiendo marcador: Latitud={latitud}, Longitud={longitud}, Fecha={fecha}")
+        #         try:
+        #             folium.Marker([latitud, longitud], popup=f'Fecha: {fecha}').add_to(mapa)
+        #         except Exception as e:
+        #             logging.error(f"Error al añadir marcador: {e}")
+        # else:
+        #     logging.info("No se obtuvieron resultados de la consulta.")
+
         mapa = folium.Map(location=[4.611, -74.08175], zoom_start=6)
         if  not os.path.exists('static'):
             os.makedirs('static')

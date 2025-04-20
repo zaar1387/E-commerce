@@ -20,6 +20,7 @@ def url_get_mapa():
             if lat is not None and lng is not None:
                 InicializaCoordenada = Coordenada(lat, lng)
                 InicializaCoordenada.RegistrarCoordenada()
+                InicializaCoordenada.ConsultarCoordenada()
                 return json.dumps({'status': 1, 'data': 1})
             else:
                 return json.dumps({'error': 'Coordenadas no proporcionadas correctamente'}), 400
@@ -28,14 +29,16 @@ def url_get_mapa():
         return json.dumps({'error': str(e)}), 500
 
 
-def generar_mapa():
-    try:
-        mapa = folium.Map(location=[4.599860, -74.162560], zoom_start=13)
-        if  not os.path.exists('static'):
-            os.makedirs('static')
-            mapa.save('static/mapa_con_marcadores.html')
-            logging.info("Mapa guardado correctamente en 'static/mapa_con_marcadores.html'")
-    except Exception as e:
-            logging.error(f"Error al guardar el mapa: {e}")
+
+
+# def generar_mapa():
+#     try:
+#         mapa = folium.Map(location=[4.599860, -74.162560], zoom_start=13)
+#         if  not os.path.exists('static'):
+#             os.makedirs('static')
+#             mapa.save('static/mapa_con_marcadores.html')
+#             logging.info("Mapa guardado correctamente en 'static/mapa_con_marcadores.html'")
+#     except Exception as e:
+#             logging.error(f"Error al guardar el mapa: {e}")
     
        
