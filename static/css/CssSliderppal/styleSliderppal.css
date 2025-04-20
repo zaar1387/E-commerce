@@ -688,9 +688,62 @@ body {
     background: linear-gradient(to top, #f2f3f3, rgba(248, 248, 248, 0));
   }
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .section__slider .container__center {
     max-width: 1070px;
     width: 100%;
   }
+} */
+
+/* responsive sliderppal */
+
+.section__slider {
+  padding: 20px;
+  background-color: #f9f9f9; /* Color de fondo opcional */
 }
+.container__center {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+.swiper-container {
+  width: 100%; /* Asegúrate de que el contenedor del swiper ocupe el 100% del ancho */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+.swiper-slide {
+  display: flex; /* Usar flexbox para alinear el contenido */
+  flex-direction: column; /* Alinear el contenido en columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  text-align: center; /* Centrar el texto */
+}
+.swiper-slide__block__img img {
+  width: 100%; /* Hacer que las imágenes sean responsivas */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+}
+.main__title, .main__subtitle, .paragraphe, .link {
+  margin: 10px 0; /* Espaciado entre los elementos de texto */
+}
+.link {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+.link:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #007bff; /* Color de las flechas */
+}
+@media (max-width: 768px) {
+  .swiper-slide__block {
+      padding: 10px; /* Espaciado interno para pantallas pequeñas */
+  }
+  .main__title {
+      font-size: 1.5em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+  .main__subtitle {
+      font-size: 1.2em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+}
+
+

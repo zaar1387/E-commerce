@@ -108,7 +108,7 @@
         <div id="banner-content" class="row clearfix">
             <section class="section__slider">
                 <div class="container__center">
-                    <div class="swiper-container">
+                   <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="swiper-slide__block">
@@ -358,11 +358,19 @@
             </div>
         </div>
        
-        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
-            <div id="map" style="height: 800px; width: 100%; margin-top: 20px;">
+        <!-- <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+            <div id="map" style="height: 600px; width:100%; margin-top: 20px;">
                 <iframe id="mapFrame"
                     src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
                     height="800px" style="border:none;"></iframe>
+            </div>
+        </aside> -->
+
+        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2" style="padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+            <div id="map" style="height: 600px; width: 100%; margin-top: 20px; display: flex; justify-content: center; align-items: center;">
+                <iframe id="mapFrame"
+                    src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
+                    height="800px" style="border:none; border-radius: 8px;"></iframe>
             </div>
         </aside>
       
