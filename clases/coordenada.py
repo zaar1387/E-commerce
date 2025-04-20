@@ -17,5 +17,7 @@ class Coordenada:
     def RegistrarCoordenada(self):
         auditoria = Auditoria('yosman.reyes')  # Ejemplo de inicialización de Auditoria
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO registro_coordenadas(lat, lng, Maquina_graba, Fecha_graba) VALUES (%s, %s, %s, %s,)",  (self.lat, self.lng, auditoria.Maquina_graba, auditoria.Fecha_graba))
+        cur.execute("INSERT INTO registro_coordenadas (lat, lng, Maquina_graba, Fecha_graba) VALUES (%s, %s, %s, %s)", (self.lat, self.lng, auditoria.Maquina_graba, auditoria.Fecha_graba))
         mysql.connection.commit()
+
+   

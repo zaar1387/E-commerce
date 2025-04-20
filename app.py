@@ -12,7 +12,9 @@ from clases.conexionDB import Conexion
 
 app = Flask(__name__)
 
-conex = Conexion('MYSQL_HOST', 'MYSQL_PORT', 'MYSQL_USER', 'MYSQL_PASSWORD', 'MYSQL_DB')
+conex = Conexion()
+
+# Cargar las variables de entorno desde el archivo .env
 app.config['MYSQL_HOST'] = conex.MYSQL_HOST
 app.config['MYSQL_PORT'] = conex.MYSQL_PORT  # Asegúrate de que esto sea un entero
 app.config['MYSQL_USER'] = conex.MYSQL_USER
@@ -20,9 +22,6 @@ app.config['MYSQL_PASSWORD'] = conex.MYSQL_PASSWORD
 app.config['MYSQL_DB'] = conex.MYSQL_DB
 
 mysql = MySQL(app)
-
-
-
 
 app.register_blueprint(Login) 
 app.register_blueprint(Registrar)
