@@ -35,29 +35,8 @@ function onLocationError(e) {
 });
 
 
- // Función para enviar coordenadas al servidor a través de AJAX y realizar la llamada telefónica
+ // Función para enviar coordenadas al servidor a través de AJAX
  function enviarCoordenadas(coordinates) {
-   
-    // $.ajax({
-    //     url: 'url_get_mapa', 
-    //     method: 'POST',
-    //     data: JSON.stringify({ coordinates: coordinates }),
-    //     contentType: 'application/json',
-    //     success: function (response) {
-        
-    //       alert('Coordenadas registradas correctamente');
-         
-    //   },
-    //     error: function (xhr, status, error) {
-    //         console.error('Error al enviar las coordenadas:', error);
-    //         alert('Error al enviar las coordenadas. Por favor, inténtalo de nuevo.');
-    //     }
-    // });
-
-
-
-
-
     $.ajax({
         url: 'url_get_mapa',
         data: {coordinates:coordinates},
@@ -65,7 +44,7 @@ function onLocationError(e) {
             success: function (response) {
                 let data = JSON.parse(response);
                 if(data.status == 1){
-                    alert('Coordenadas registradas correctamente');
+                    // alert('Coordenadas registradas correctamente');
                 }else{
                     alert('Error al enviar las coordenadas. Por favor, inténtalo de nuevo.');
                 }
