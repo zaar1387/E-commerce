@@ -80,13 +80,16 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#about">Servicios</a>
+                                <a href="#content">Inicio</a>
                             </li>
                             <li>
-                                <a href="#services">Reservar servicio</a>
+                                <a href="#Servicios">Servicios</a>
                             </li>
                             <li>
-                                <a href="#testimonials">Visitas</a>
+                                <a href="#Services">Reservar</a>
+                            </li>
+                            <li>
+                                <a href="#Visitas">Visitas</a>
                             </li>
                             <li>
                                 <a href="#gallery">Galería</a>
@@ -196,8 +199,9 @@
     </header>
    
     <main id="content">
+
         <section class="scrollto text-center">
-            <div id="about" class="container introduction scrollto">
+            <div id="Servicios" class="container introduction scrollto">
                 <div class="card">
                     <div class="face face1">
                         <div class="content">
@@ -321,7 +325,7 @@
 
         </aside>
       
-        <div id="services" class="scrollto clearfix"> 
+        <div id="Services" class="scrollto clearfix"> 
             <div class="row no-padding-bottom clearfix">
                 <div class="col-3">
                     <blockquote class="testimonial text-right bigtest">
@@ -358,27 +362,18 @@
             </div>
         </div>
        
-        <!-- <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
-            <div id="map" style="height: 600px; width:100%; margin-top: 20px;">
-                <iframe id="mapFrame"
-                    src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
-                    height="800px" style="border:none;"></iframe>
-            </div>
-        </aside> -->
-
-        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2" style="padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-            <div id="map" style="height: 600px; width: 100%; margin-top: 20px; display: flex; justify-content: center; align-items: center;">
-                <iframe id="mapFrame"
-                    src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
-                    height="800px" style="border:none; border-radius: 8px;"></iframe>
-            </div>
-        </aside>
+        <section id="Visitas" class="scrollto text-center" data-enllax-ratio=".2">
+            <aside>
+                <div id="map" style="height: 600px; width:100%; margin-top: 20px;">
+                    <iframe id="mapFrame" src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}"
+                        width="70%" height="800px" style="border:none;"></iframe>
+                </div>
+            </aside>
+        </section>
       
         <section id="clients" class="scrollto clearfix">
             <div class="row clearfix">
-
                 <div class="col-3">
-
                     <div class="section-heading">
                         <h3>TRUST</h3>
                         <h2 class="section-title">Companies who use our services</h2>
@@ -386,11 +381,8 @@
                             eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
                     </div>
-
                 </div>
-
                 <div class="col-2-3">
-
                     <a href="#" class="col-3">
                         <img src="static/images/company-images/company-logo1.png" alt="Company"/>
                         <div class="client-overlay"><span>Tree</span></div>
@@ -423,14 +415,11 @@
                         <img src="static/images/company-images/company-logo8.png" alt="Company"/>
                         <div class="client-overlay"><span>Cold</span></div>
                     </a>
-
                     <a href="#" class="col-3">
                         <img src="static/images/company-images/company-logo9.png" alt="Company"/>
                         <div class="client-overlay"><span>Cold</span></div>
                     </a>
-
                 </div>
-
             </div>
         </section>
        
@@ -507,6 +496,7 @@
 
             </div>
         </section>
+
     </main>
    
     <footer id="landing-footer" class="clearfix">

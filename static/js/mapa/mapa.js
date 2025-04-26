@@ -1,38 +1,38 @@
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
 
-// Inicializa el mapa y establece la vista inicial
-var map = L.map('map');
+// // Inicializa el mapa y establece la vista inicial
+// var map = L.map('map');
 
 // Agrega el mapa base de OpenStreetMap
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+// L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
 
- // Solicita la ubicación actual del usuario
- map.on('locationfound', onLocationFound);
- map.on('locationerror', onLocationError);
- map.locate({ setView: true, maxZoom: 16 });
+//  // Solicita la ubicación actual del usuario
+//  map.on('locationfound', onLocationFound);
+//  map.on('locationerror', onLocationError);
+//  map.locate({ setView: true, maxZoom: 16 });
 
- // Función para manejar la geolocalización exitosa
- function onLocationFound(e) {
-    var radius = e.accuracy / 2;
-    var userLatLng = e.latlng;
-    L.marker(userLatLng).addTo(map)
-    .bindPopup('Tú ubicación')
-    .openPopup();
-    L.circle(userLatLng, radius).addTo(map);
-    let coordinates = {
-        lat: userLatLng.lat,
-        lng: userLatLng.lng
-    };
-    enviarCoordenadas(coordinates);
-}
+//  // Función para manejar la geolocalización exitosa
+//  function onLocationFound(e) {
+//     var radius = e.accuracy / 2;
+//     var userLatLng = e.latlng;
+//     L.marker(userLatLng).addTo(map)
+//     .bindPopup('Tú ubicación')
+//     .openPopup();
+//     L.circle(userLatLng, radius).addTo(map);
+//     let coordinates = {
+//         lat: userLatLng.lat,
+//         lng: userLatLng.lng
+//     };
+//     enviarCoordenadas(coordinates);
+// }
 
-function onLocationError(e) {
-    alert(e.message);
-}
+// function onLocationError(e) {
+//     alert(e.message);
+// }
 
-});
+// });
 
 
  // Función para enviar coordenadas al servidor a través de AJAX
@@ -43,8 +43,9 @@ function onLocationError(e) {
         type: 'POST',
             success: function (response) {
                 let data = JSON.parse(response);
+                // let data = JSON.parse(JSON.stringify(response));
                 if(data.status == 1){
-                    // alert('Coordenadas registradas correctamente');
+                    alert('Coordenadas registradas correctamente');
                 }else{
                     alert('Error al enviar las coordenadas. Por favor, inténtalo de nuevo.');
                 }
@@ -54,3 +55,40 @@ function onLocationError(e) {
         }
     });
   }
+
+
+//   let dataOriginal = JSON.parse(jsonOriginal);
+//   // Función para transformar las coordenadas al formato deseado
+//   function transformarCoordenadas(data) {
+//       let coordenadas = data.data.map(coord => {
+//           // Convertimos las coordenadas de string a número
+//           return [parseFloat(coord[0]), parseFloat(coord[1])];
+//       });
+      
+//       return { coordenadas: coordenadas };
+//   }
+//   // Transformamos las coordenadas
+//   let resultado = transformarCoordenadas(dataOriginal);
+//   // Imprimimos el resultado
+//   console.log(JSON.stringify(resultado, null, 2));
+
+
+
+
+
+
+// Función para visualizar las coordenadas en el mapa
+function visualizarCoordenadas(coordenadas) {
+    if (!coordenadas || coordenadas.length === 0) {
+        console.error("No hay coordenadas para mostrar.");
+        return;
+    }
+    coordenadas.forEach(coord => {
+        if (Array.isArray(coord) && coord.length === 2) {
+            let marker = L.marker(coord).addTo(map);
+            marker.bindPopup(`Coordenadas: ${coord[0]}, ${coord[1]}`).openPopup();
+        } else {
+            console.error("Formato de coordenadas inválido:", coord);
+        }
+    });
+}

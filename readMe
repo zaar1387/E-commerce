@@ -2,6 +2,13 @@
 
 config ruta visualice mapa hmtl
 
- <!-- src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
+src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
                     height="800px" style="border:none;"></iframe>
 
+
+
+MYSQL_HOST=localhost
+MYSQL_PORT='3306'
+MYSQL_USER=ecommerce
+MYSQL_PASSWORD=NwH13*YQcg/2MVg2
+MYSQL_DB=ecommerce 

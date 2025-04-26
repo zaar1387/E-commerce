@@ -24,21 +24,11 @@ class Coordenada:
         mysql.connection.commit()
         cur.close()
 
-    def ConsultarCoordenada(self):
+    def ConsultarCoordenada():
         cur = mysql.connection.cursor()
         cur.execute("SELECT lat, lng FROM registro_coordenadas")
         results = cur.fetchall()
         cur.close()
-        if results:
-            for (latitud, longitud, fecha) in results:
-                # logging.debug(f"Añadiendo marcador: Latitud={latitud}, Longitud={longitud}, Fecha={fecha}")
-                try:
-                    mapa = folium.Map(location=[latitud, longitud], zoom_start=6)
-                    folium.Marker([latitud, longitud], popup=f'Fecha: {fecha}').add_to(mapa)
-                except Exception as e:
-                    logging.error(f"Error al añadir marcador: {e}")
-        else:
-            logging.info("No se obtuvieron resultados de la consulta.")
         return results
 
    

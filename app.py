@@ -8,7 +8,11 @@ import folium
 import os
 import logging
 from flask_mysqldb import MySQL
+import geocoder
+
+
 from clases.conexionDB import Conexion
+from clases.coordenada import Coordenada
 
 app = Flask(__name__)
 
@@ -35,33 +39,52 @@ app.secret_key = 'mysecretkey'
 
 @app.route('/')
 def default():
+    url_get_mapa()
     generar_mapa()
     return render_template('./index/index.html')
 
+def url_get_mapa():
+    try:
+            g = geocoder.ip('me')
+            lat, lng = g.latlng
+            if lat is not None and lng is not None:
+                InicializaCoordenada = Coordenada(lat, lng)
+                InicializaCoordenada.RegistrarCoordenada()
+    except Exception as e:
+        logging.error(f"Error al visualizar las coordenadas: {e}")
+
+
 def generar_mapa():
     try:
-        # cur = mysql.connection.cursor()
-        # query = "SELECT a.lat, a.lng, a.Fecha_graba FROM registro_coordenadas a"
-        # cur.execute(query)
-        # results = query.fetchall()
-        # logging.debug(f"Datos obtenidos de la base de datos: {results}")
-        # if results:
-        #     for (latitud, longitud, fecha) in results:
-        #         logging.debug(f"Añadiendo marcador: Latitud={latitud}, Longitud={longitud}, Fecha={fecha}")
-        #         try:
-        #             folium.Marker([latitud, longitud], popup=f'Fecha: {fecha}').add_to(mapa)
-        #         except Exception as e:
-        #             logging.error(f"Error al añadir marcador: {e}")
-        # else:
-        #     logging.info("No se obtuvieron resultados de la consulta.")
-
-        mapa = folium.Map(location=[4.611, -74.08175], zoom_start=6)
         if  not os.path.exists('static'):
             os.makedirs('static')
-        mapa.save('static/mapa_con_marcadores.html')
-        logging.info("Mapa guardado correctamente en 'static/mapa_con_marcadores.html'")
+        else:
+            # # Obtener ubicación aproximada por IP
+            # g = geocoder.ip('me')
+            # lat, lon = g.latlng
+
+            # mapa1 = folium.Map(location=[lat, lon], zoom_start=6)
+            # folium.Marker(
+            #     location=[lat, lon],
+            #     popup="¡Estás aquí!",
+            #     icon=folium.Icon(color="red", icon="user")
+            # ).add_to(mapa1)
+
+            # folium.Circle(
+            #     location=[lat, lon],
+            #     radius=1000,  # 1km de radio (ajústalo)
+            #     color="#3186cc",
+            #     fill=True
+            # ).add_to(mapa1)
+
+
+            xy = Coordenada.ConsultarCoordenada()
+            mapa = folium.Map(location=xy[0], zoom_start=6)
+            for lat, lon in xy:
+                folium.Marker([lat, lon], popup="Visita sitio").add_to(mapa)
+            mapa.save('static/mapa_con_marcadores.html')
     except Exception as e:
-            logging.error(f"Error al guardar el mapa: {e}")
+        logging.error(f"Error al visualizar las coordenadas: {e}")
 
 
 if __name__ == '__main__': 
