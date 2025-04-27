@@ -125,23 +125,12 @@ if ("geolocation" in navigator) {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
             };
-            // console.log("Coordenadas obtenidas:", coordinates);
-
-            // Enviar al servidor
-            // fetch('/guardar_ubicacion', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(coords)
-            // });
             $.ajax({
                         url: 'url_get_mapa',
                         data: {coordinates:coordinates},
                         type: 'POST',
                             success: function (response) {
                                 let data = JSON.parse(response);
-                                // let data = JSON.parse(JSON.stringify(response));
                                 if(data.status == 1){
                                     //  window.location.href = "/"
                                     // alert('Coordenadas registradas correctamente');
