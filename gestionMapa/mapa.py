@@ -6,6 +6,7 @@ from clases.conexionDB import Conexion
 from clases.coordenada import Coordenada
 from flask_mysqldb import MySQL
 import geocoder
+from flask import redirect
 
 
 Mapa = Blueprint("mapa", __name__)
@@ -18,8 +19,10 @@ def url_get_mapa():
             # array = request.form.to_dict() 
             # lat = array['coordinates[lat]']
             # lng = array['coordinates[lng]']
+
             g = geocoder.ip('me')
             lat, lng = g.latlng
+
             if lat is not None and lng is not None:
                 InicializaCoordenada = Coordenada(lat, lng)
                 InicializaCoordenada.RegistrarCoordenada()
@@ -33,7 +36,7 @@ def url_get_mapa():
                 #         logging.error(f"Error al añadir marcador: {e}")
                 # else:
                 #     return json.dumps({'error': 'Coordenadas no proporcionadas correctamente'}), 400
-                return json.dumps({'status': 1, 'data': 1})
+                return redirect('/')
             
     except Exception as e:
         print("Error en la función url_get_mapa:", e)
