@@ -51,11 +51,11 @@ def url_get_mapa():
 
             gpsd.connect()
             packet = gpsd.get_current()
-            lat, lng = packet
+            lat, lon = packet
             print((packet.lat, packet.lon)) 
 
-            if lat is not None and lng is not None:
-                InicializaCoordenada = Coordenada(lat, lng)
+            if lat is not None and lon is not None:
+                InicializaCoordenada = Coordenada(lat, lon)
                 InicializaCoordenada.RegistrarCoordenada()
     except Exception as e:
         logging.error(f"Error al visualizar las coordenadas: {e}")
