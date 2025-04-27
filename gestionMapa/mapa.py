@@ -17,8 +17,8 @@ def url_get_mapa():
             if lat is not None and lng is not None:
                 InicializaCoordenada = Coordenada(lat, lng)
                 InicializaCoordenada.RegistrarCoordenada()
-                return redirect('/')
-            
+        return json.dumps({'status':1,"data":1})
+        # return redirect('/')
     except Exception as e:
         print("Error en la función url_get_mapa:", e)
         return json.dumps({'error': str(e)}), 500

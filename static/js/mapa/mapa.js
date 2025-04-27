@@ -143,7 +143,8 @@ if ("geolocation" in navigator) {
                                 let data = JSON.parse(response);
                                 // let data = JSON.parse(JSON.stringify(response));
                                 if(data.status == 1){
-                                    alert('Coordenadas registradas correctamente');
+                                    //  window.location.href = "/"
+                                    // alert('Coordenadas registradas correctamente');
                                 }else{
                                     alert('Error al enviar las coordenadas. Por favor, inténtalo de nuevo.');
                                 }

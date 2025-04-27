@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, json
 from iniciosesion.login import Login
 from registrarusuario.registrar import Registrar
 from olvidocontrasenia.olvido import Olvidocontrasenia
@@ -10,6 +10,20 @@ import logging
 from flask_mysqldb import MySQL
 import geocoder
 import gpsd
+from telegram import Bot
+from telegram.request import HTTPXRequest
+import httpx
+import certifi
+from dotenv import load_dotenv
+
+
+import tracemalloc
+tracemalloc.start()
+import ssl
+
+
+# Configurar la ruta de certificados SSL
+os.environ['SSL_CERT_FILE'] = certifi.where()
 
 
 from clases.conexionDB import Conexion
@@ -32,8 +46,13 @@ app.register_blueprint(Login)
 app.register_blueprint(Registrar)
 app.register_blueprint(Olvidocontrasenia)
 app.register_blueprint(IndexInterno) 
-app.register_blueprint(Mapa) 
-
+app.register_blueprint(Mapa)
+# Token del bot 
+token = "8001684220:AAFiTf0awnD3v4tsjCPGi4tTqf6_-wURrUs"
+# ID del chat
+chat_id = 893903335
+# Crear un objeto Bot
+bot = Bot(token=token)
 
 valid = False
 app.secret_key = 'mysecretkey'
@@ -54,6 +73,7 @@ def generar_mapa():
             for lat, lon in xy:
                 folium.Marker([lat, lon], popup="Visita sitio").add_to(mapa)
             mapa.save('static/mapa_con_marcadores.html')
+        
     except Exception as e:
         logging.error(f"Error al visualizar las coordenadas: {e}")
 
