@@ -16,12 +16,12 @@ Mapa = Blueprint("mapa", __name__)
 def url_get_mapa():
     try:
         if request.method == 'POST':
-            # array = request.form.to_dict() 
-            # lat = array['coordinates[lat]']
-            # lng = array['coordinates[lng]']
+            array = request.form.to_dict() 
+            lat = array['coordinates[lat]']
+            lng = array['coordinates[lng]']
 
-            g = geocoder.ip('me')
-            lat, lng = g.latlng
+            # g = geocoder.ip('me')
+            # lat, lng = g.latlng
 
             if lat is not None and lng is not None:
                 InicializaCoordenada = Coordenada(lat, lng)

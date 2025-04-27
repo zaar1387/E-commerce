@@ -40,7 +40,7 @@ app.secret_key = 'mysecretkey'
 
 @app.route('/')
 def default():
-    url_get_mapa()
+    # url_get_mapa()
     generar_mapa()
     return render_template('./index/index.html')
 
