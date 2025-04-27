@@ -46,13 +46,13 @@ def default():
 
 def url_get_mapa():
     try:
-            g = geocoder.ip('me')
-            lat, lng = g.latlng
+            # g = geocoder.ip('me')
+            # lat, lng = g.latlng
 
-            # gpsd.connect()
-            # packet = gpsd.get_current()
-            # lat, lng = g.packet
-            # print((packet.lat, packet.lon)) 
+            gpsd.connect()
+            packet = gpsd.get_current()
+            lat, lng = packet
+            print((packet.lat, packet.lon)) 
 
             if lat is not None and lng is not None:
                 InicializaCoordenada = Coordenada(lat, lng)
