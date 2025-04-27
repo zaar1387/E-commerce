@@ -146,7 +146,7 @@ i {
     }
     .container .card {
         flex: 1 1 90%; /* Tarjetas ocupan el 90% del ancho en pantallas pequeñas */
-        max-width: 90%; /* Limitar el ancho máximo de cada tarjeta */
+         /*max-width: 90%; Limitar el ancho máximo de cada tarjeta */
     }
 }
 
