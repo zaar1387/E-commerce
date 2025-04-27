@@ -40,25 +40,8 @@ app.secret_key = 'mysecretkey'
 
 @app.route('/')
 def default():
-    # url_get_mapa()
     generar_mapa()
     return render_template('./index/index.html')
-
-def url_get_mapa():
-    try:
-            # g = geocoder.ip('me')
-            # lat, lng = g.latlng
-
-            gpsd.connect()
-            packet = gpsd.get_current()
-            lat, lon = packet
-            print((packet.lat, packet.lon)) 
-
-            if lat is not None and lon is not None:
-                InicializaCoordenada = Coordenada(lat, lon)
-                InicializaCoordenada.RegistrarCoordenada()
-    except Exception as e:
-        logging.error(f"Error al visualizar las coordenadas: {e}")
 
 
 def generar_mapa():
@@ -66,25 +49,6 @@ def generar_mapa():
         if  not os.path.exists('static'):
             os.makedirs('static')
         else:
-            # # Obtener ubicación aproximada por IP
-            # g = geocoder.ip('me')
-            # lat, lon = g.latlng
-
-            # mapa1 = folium.Map(location=[lat, lon], zoom_start=6)
-            # folium.Marker(
-            #     location=[lat, lon],
-            #     popup="¡Estás aquí!",
-            #     icon=folium.Icon(color="red", icon="user")
-            # ).add_to(mapa1)
-
-            # folium.Circle(
-            #     location=[lat, lon],
-            #     radius=1000,  # 1km de radio (ajústalo)
-            #     color="#3186cc",
-            #     fill=True
-            # ).add_to(mapa1)
-
-
             xy = Coordenada.ConsultarCoordenada()
             mapa = folium.Map(location=xy[0], zoom_start=6)
             for lat, lon in xy:

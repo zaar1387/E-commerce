@@ -2,15 +2,10 @@ from flask import Flask
 from flask_mysqldb import MySQL
 from clases.auditoria import Auditoria
 from clases.conexionDB import Conexion
-import os
 from dotenv import load_dotenv
-import folium
-import logging
-
 
 app = Flask(__name__)
 mysql = MySQL(app)
-
 
 class Coordenada:
     def __init__(self, lat, lng):
