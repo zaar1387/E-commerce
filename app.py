@@ -8,11 +8,8 @@ import folium
 import os
 import logging
 from flask_mysqldb import MySQL
-import geocoder
-import gpsd
 from telegram import Bot
 from telegram.request import HTTPXRequest
-import httpx
 import certifi
 from dotenv import load_dotenv
 
