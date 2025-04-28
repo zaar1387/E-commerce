@@ -563,18 +563,19 @@
         <section id="Visitas" class="scrollto clearfix">
             <aside>
                 <div class="container introduction scrollto">
-                    <div class="row clearfix">
+                    <div class="row clearfix text-center">
                         <div class="col-md-12">
                             <div class="section-heading text-center">
                                 <h2 class="section-title">Visitas al sitio web</h2>
                             </div>
                         </div>
                         <div id="map" style="height: 600px; width:100%; margin-top: 20px;">
-                            <iframe id="mapFrame" src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}"
-                                width="70%" height="800px" style="border:none;"></iframe>
-                        </div>
+                    <iframe id="mapFrame" src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
+                        height="800px" style="border:none;"></iframe>
+                </div>
                     </div>
-                </div>                
+                </div>
+                
             </aside>
         </section>
 
