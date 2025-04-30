@@ -1,7 +1,80 @@
------
 
-config ruta visualice mapa hmtl
+# 🚚 Sistema de Gestión para Servicios de Mudanza y Trasteo  
 
-src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}" width="70%"
-                    height="800px" style="border:none;"></iframe>
+**¡Bienvenido/a al repositorio!** 
 
+Este proyecto es un sitio web diseñado para gestionar y promocionar servicios profesionales de mudanza y trasteo, ofreciendo una experiencia intuitiva tanto para clientes como para administradores.
+
+## 🎯 Objetivo del Proyecto  
+
+Desarrollar un sitio web integral que permita:  
+
+1. **Mostrar el progreso de actividades** mediante un slider interactivo con fotografías y textos descriptivos.  
+
+2. **Promocionar servicios** de mudanza y transporte de manera clara y atractiva.
+  
+3. **Facilitar reservas** mediante un formulario detallado que incluye:  
+   - Programación de fechas y rutas (origen-destino).  
+   - Descripción de artículos a transportar.  
+   - Datos de contacto del cliente (nombre, apellidos, teléfono).  
+   - Integración con **API de Telegram** para notificaciones instantáneas al propietario.
+  
+4. **Registrar visitas** mediante coordenadas geográficas para analizar el alcance del sitio.  
+
+5. **Exhibir una galería fotográfica** de trabajos realizados.  
+
+6. **Proporcionar información de contacto** directa del propietario.  
+
+7. **Gestionar acceso seguro** con sistema de inicio de sesión.  
+
+## ✨ Funcionalidades Clave  
+- **Slider Multimedia**: Visualización dinámica de proyectos recientes.  
+
+- **Sección de Servicios**: Catálogo detallado de soluciones ofrecidas.  
+
+- **Reservas en Tiempo Real**: Formulario integrado con flujo de notificaciones automatizadas.  
+
+- **Geolocalización de Visitas**: Mapa interactivo o registro de ubicaciones de acceso.  
+
+- **Galería Organizada**: Colección de imágenes clasificadas por tipo de servicio.  
+
+- **Canales de Contacto**: Enlaces directos a WhatsApp, correo electrónico y redes sociales.  
+
+- **Autenticación de Usuarios**: Acceso seguro para administradores y clientes registrados.  
+
+## 🛠️ Tecnologías Utilizadas  
+
+- **Backend**: Python (Flask). 
+ 
+- **Frontend**: HTML/CSS/JavaScript + Librerías (ej: Swiper.js para sliders). 
+ 
+- **Base de Datos**: MySQL.  
+
+- **APIs**: Telegram Bot API para notificaciones, Geolocalización.  
+
+- **Despliegue**: Heroku.  
+
+## 🚀 Instalación  
+
+1. Clona el repositorio:  
+   
+2. Instala dependencias:  
+   pip install -r requirements.txt  
+  
+3. Configura variables de entorno (API keys,   
+   credenciales de DB).  
+
+4. Ejecuta migraciones:  
+   ```bash  
+   python manage.py migrate  
+   ```  
+5. Inicia el servidor:  
+   ```bash  
+   python manage.py runserver  
+   ```  
+
+## 📄 Licencia  
+Distribuido bajo licencia MIT. Ver `LICENSE` para más detalles.  
+
+## 📧 Contacto  
+¿Preguntas o colaboraciones? Escríbeme a [zaar1387@gmail.com](celular: +0573128312920 WhatsApp).  
