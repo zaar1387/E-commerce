@@ -325,6 +325,62 @@
                         </div>
                     </div>
                 </div>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Ciudad">Departamento origen</label><br>
+                            <select name="idCiudadOrigen" id="idCiudadOrigen" class="js-example-basic-single w-100 responsive-select">
+                                <option value="0">Seleccione la ciudad...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Mpio">Municipio origen</label><br>
+                            <select name="idMunicipioOrigen" id="idMunicipioOrigen" class="js-example-basic-single w-100 responsive-select">
+                                <option value="0">Seleccione el municipio...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Mpio">¿Requiere ayudante?</label><br>
+                            <select name="idDesicionayudante" id="idDesicionayudante" class="js-example-basic-single w-100 responsive-select">
+                                <option value="0">Seleccionar opción...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="idFecha">Fecha salida </label><br>
+                            <input type="datetime-local" id="idFechaSalida" name="idFechaRequireSalida" class="form-control" placeholder="Descripción">
+                        </div>
+                    </div>
+                </row>
+                <div class="row text-center" style="display: none;">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="Ciudad">Ciudad detino</label><br>
+                            <select name="idCiudadDestino" id="idCiudadDestino" class="js-example-basic-single w-100 responsive-select">
+                                <option value="0">Seleccione la ciudad...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="Mpio">Municipio destino</label><br>
+                            <select name="idMunicipioDestino" id="idMunicipioDestino" class="js-example-basic-single w-100 responsive-select">
+                                <option value="0">Seleccione el municipio...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="idFecha">Fecha retorno</label><br>
+                            <input type="datetime-local" id="idFechaRegreso" name="idFechaRegreso" onclick='return validaFecha();' class="form-control" placeholder="Descripción">
+                        </div>
+                    </div>
+                </row>
             </div>
         </div>
        
@@ -536,7 +592,7 @@
 
 <script src="static/js/jquery.1.8.3.min.js"></script>
 <script src="static/js/wow.min.js"></script>
- <script src="static/js/hammer.min.js"></script>  <!--requerida para que funcione featherlight.min.js -->
+<script src="static/js/hammer.min.js"></script>  <!--requerida para que funcione featherlight.min.js -->
 <script src="static/js/featherlight.min.js"></script>
 <script src="static/js/featherlight.gallery.min.js"></script>
 <script src="static/js/jquery.enllax.min.js"></script>
@@ -549,17 +605,6 @@
 <script src="static/js/site.js"></script>
 <script src="static/js/mapa/mapa.js?41331" type="text/javascript"></script>
 
-
-<script type="text/javascript" language="javascript">
-
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-     
-        card.classList.toggle('closed');
-    });
-});
-
-</script>
 
 </body>
 </html>

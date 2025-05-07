@@ -66,7 +66,7 @@ def generar_mapa():
             os.makedirs('static')
         else:
             xy = Coordenada.ConsultarCoordenada()
-            mapa = folium.Map(location=xy[0], zoom_start=6)
+            mapa = folium.Map(location=xy[0], zoom_start=12)
             for lat, lon in xy:
                 folium.Marker([lat, lon], popup="Visita sitio").add_to(mapa)
             mapa.save('static/mapa_con_marcadores.html')
