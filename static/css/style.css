@@ -131,6 +131,10 @@ section {
     margin: 0 auto;
     padding: 75px 0;
     position: relative;
+    /* flex-direction: column; 
+    align-items: center;
+    flex-wrap: nowrap; */
+   
 }
 .no-padding-bottom .row, .no-padding-bottom div, .no-padding-bottom.row {
     padding-bottom: 0;
@@ -1883,8 +1887,11 @@ blockquote {
 }
 .row {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    flex-wrap: wrap; /*Permite que los elementos se ajusten en varias filas */
     justify-content: center; /* Centra los elementos en el eje horizontal */
+    /* flex-direction: column; */
+    /* align-items: center;
+    flex-wrap: nowrap; */
 }
 .card {
     margin: 15px; /* Espacio entre los cards */
