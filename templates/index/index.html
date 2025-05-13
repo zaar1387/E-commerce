@@ -317,134 +317,83 @@
         </div>
 
         <div id="Reservar" class="scrollto clearfix">
-            <div class="container introduction scrollto" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div class="row clearfix">
+            <div class="container introduction scrollto"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        
+                <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="section-heading text-center">
                             <h2 class="section-title">Reservar un servicio</h2>
                         </div>
                     </div>
-                    <div class="row clearfix" style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0; flex-direction: row;">
-                        <tbody>
-                            <tr>
-                                <div class="col-md-4">
-                                    <nav class="form-group">
-                                        <label for="CiudadOrigen">Departamento destino</label><br>
-                                        <select name="idCiudadOrigen" id="idCiudadOrigen"
-                                            class="js-example-basic-single w-100 responsive-select">
-                                            <option value="0">lista Departamentos...</option>
-                                        </select>
-                                    </nav>
-                                </div>
-                                <div class="col-md-4">
-                                    <nav class="form-group">
-                                        <label for="MunicipioOrigen">Municipio destino</label><br>
-                                        <select name="idMunicipioOrigen" id="idMunicipioOrigen"
-                                            class="js-example-basic-single w-100 responsive-select">
-                                            <option value="0">lista municipios...</option>
-                                        </select>
-                                    </nav>
-                                </div>
-                                <div class="col-md-4">
-                                    <nav class="form-group">
-                                        <label for="Desicionayudante">¿Requiere ayudante?</label><br>
-                                        <select name="idDesicionayudante" id="idDesicionayudante"
-                                            class="js-example-basic-single w-100 responsive-select">
-                                            <option value="0">Seleccionar opción...</option>
-                                        </select>
-                                    </nav>
-                                </div>
-                            </tr>
-                            <tr>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="FechaSalida">Fecha salida</label><br>
-                                        <input type="datetime-local" id="idFechaSalida" name="idFechaSalida" class="form-control"
-                                            placeholder="Descripción">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="NumeroCelular">Número celular</label><br>
-                                        <input type="number" id="idNumeroCelular" name="idNumeroCelular" class="form-control"
-                                            placeholder="número">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="Nombres">Nombres y apellidos</label><br>
-                                        <input type="text" id="idNombreApellido" name="idNombreApellido" class="form-control"
-                                            placeholder="Nombres y apellidos">
-                                    </div>
-                                </div>
-                            </tr>
-                        </tbody>
-                    </div>
-
-                    <div class="row clearfix"
-                        style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0; flex-direction: row;">
-                    </div>
                 </div>
-                <!-- <div class="row clearfix" style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0; flex-direction: row;">
-                            <nav class="col-md-4">
+                <br>
+                <div class="row clearfix"
+                    style="display: flex; flex-wrap: wrap; margin: 0; align-content: center; align-items: center; ">
+                    <tbody>
+                        <tr>
+                            <div class="col-md-4">
                                 <nav class="form-group">
+                                    <label for="CiudadOrigen">Departamento destino</label><br>
+                                    <select name="idCiudadOrigen" id="idCiudadOrigen"
+                                        class="js-example-basic-single w-100 responsive-select">
+                                        <option value="0">Seleccionar...</option>
+                                    </select>
+                                </nav>
+                            </div>
+                            <div class="col-md-4">
+                                <nav class="form-group">
+                                    <label for="MunicipioOrigen">Municipio destino</label><br>
+                                    <select name="idMunicipioOrigen" id="idMunicipioOrigen"
+                                        class="js-example-basic-single w-100 responsive-select">
+                                        <option value="0">Seleccionar...</option>
+                                    </select>
+                                </nav>
+                            </div>
+                            <div class="col-md-4">
+                                <nav class="form-group">
+                                    <label for="Desicionayudante">¿Requiere ayudante?</label><br>
+                                    <select name="idDesicionayudante" id="idDesicionayudante"
+                                        class="js-example-basic-single w-100 responsive-select">
+                                        <option value="0">Seleccionar...</option>
+                                    </select>
+                                </nav>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="col-md-4">
+                                <div class="form-group">
                                     <label for="FechaSalida">Fecha salida</label><br>
-                                    <input type="datetime-local" id="idFechaSalida" name="idFechaRequireSalida" class="form-control"
+                                    <input type="datetime-local" id="idFechaSalida" name="idFechaSalida" class="form-control"
                                         placeholder="Descripción">
-                                </nav>
-                            </nav>
-                            <nav class="col-md-4">
-                                <nav class="form-group">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
                                     <label for="NumeroCelular">Número celular</label><br>
-                                    <input type="number" id="idNumeroCelular" name="idNumeroCelular" class="form-control" placeholder="número">
-                                </nav>
-                            </nav>
-                            <nav class="col-md-4">
-                                <nav class="form-group">
+                                    <input type="number" id="idNumeroCelular" name="idNumeroCelular" class="form-control"
+                                        placeholder="número">
+                                </div>
+                            </div>
+                            
+                        </tr>
+                        <tr>
+                            <div class="col-md-12">
+                                <div class="form-group">
                                     <label for="Nombres">Nombres y apellidos</label><br>
                                     <input type="text" id="idNombreApellido" name="idNombreApellido" class="form-control"
                                         placeholder="Nombres y apellidos">
-                                </nav>
-                            </nav>
-                        </div> -->
-                <!-- <div class="row clearfix" style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0; flex-direction: row;">
-                            <nav class="col-md-4">
-                                <nav class="form-group">
-                                    <label for="Ciudad">Ciudad destino</label><br>
-                                    <select name="idCiudadDestino" id="idCiudadDestino" class="js-example-basic-single w-100 responsive-select">
-                                        <option value="0">Seleccione la ciudad...</option>
-                                    </select>
-                                </nav>
-                            </nav>
-                            <nav class="col-md-4">
-                                <nav class="form-group">
-                                    <label for="Mpio">Municipio destino</label><br>
-                                    <select name="idMunicipioDestino" id="idMunicipioDestino"
-                                        class="js-example-basic-single w-100 responsive-select">
-                                        <option value="0">Seleccione el municipio...</option>
-                                    </select>
-                                </nav>
-                            </nav>
-                            <nav class="col-md-4">
-                                <nav class="form-group">
-                                    <label for="idFecha">Fecha retorno</label><br>
-                                    <input type="datetime-local" id="idFechaRegreso" name="idFechaRegreso" onclick='return validaFecha();'
-                                        class="form-control" placeholder="Descripción">
-                                </nav>
-                            </nav>
-                          
-                            <div class="row clearfix"
-                                style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0; flex-direction: row;">
-                                <nav class="col-md-12 text-center">
-                                    <nav class="form-group">
-                                        <button type="submit" class="btn">Registrar</button>
-                                    </nav>
-                                </nav>
-                                </nav>
+                                </div>
                             </div>
-                        </div> -->
+                        </tr>
+                    </tbody>
+                </div>
+                <div class="row clearfix"
+                    style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0; flex-direction: row;">
+                </div>
             </div>
         </div>
+        
        
         <section id="Visitas" class="scrollto clearfix">
             <aside>
