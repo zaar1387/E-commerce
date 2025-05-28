@@ -13,16 +13,6 @@ from telegram.request import HTTPXRequest
 import certifi
 from dotenv import load_dotenv
 
-
-# import tracemalloc
-# tracemalloc.start()
-# import ssl
-
-
-# # Configurar la ruta de certificados SSL
-# os.environ['SSL_CERT_FILE'] = certifi.where()
-
-
 from clases.conexionDB import Conexion
 from clases.coordenada import Coordenada
 
