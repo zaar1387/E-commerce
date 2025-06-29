@@ -286,23 +286,49 @@
                         <div class="section-heading text-center" style="margin-bottom: 5px;">
                             <h2 class="section-title" style="margin: 0; padding: 0;">Reservar servicio</h2>
                         </div>
-                        <p class="text-justify mb-3" style="margin-top: 5px;">Diligencia los siguientes campos                        servicio.</p>
+                        <p class="text-justify mb-3" style="margin-top: 5px;">Diligencia los siguientes campos, con el fin de conocer el origen y destino de tú reserva</p>
                     </div>
-                    <div class="row clearfix" style="display: flex; flex-wrap: wrap; gap: 15px; margin: 0; padding: 0 15px;">
+                    <div class="col-md-4" style="padding: 5;">
+                    </div>
+                
+                    <div class="row clearfix" style="display: flex; flex-wrap: wrap; gap: 30px; margin: 0; padding: 0 15px;">
                         <div class="col-md-4 text-center" style="padding: 0;">
                             <div class="form-group mb-2">
-                                <label for="CiudadOrigen">Departamento</label>
+                                <label for="CiudadOrigen">Departamento - origen</label>
                                 <select name="idCiudadOrigen" id="idCiudadOrigen" class="form-control responsive-select"
                                     style="width: 100%;">
                                     <option value="0">Seleccionar...</option>
                                 </select>
                             </div>
                         </div>
+
                 
                         <div class="col-md-4 text-center" style="padding: 0;">
                             <div class="form-group mb-2">
-                                <label for="MunicipioOrigen">Municipio</label>
+                                <label for="MunicipioOrigen">Municipio - origen</label>
                                 <select name="idMunicipioOrigen" id="idMunicipioOrigen" class="form-control responsive-select"
+                                    style="width: 100%;">
+                                    <option value="0">Seleccionar...</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 text-center" style="padding: 0;">
+                            <div class="form-group mb-2">
+                                <label for="CiudadDestino">Departamento - destino</label>
+                                <select name="idCiudadDestino" id="idCiudadDestino" class="form-control responsive-select"
+                                    style="width: 100%;">
+                                    <option value="0">Seleccionar...</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 text-center" style="padding: 0;">
+                            <div class="form-group mb-2">
+                                <label for="MunicipioDestino">Municipio - destino</label>
+                                <select name="idMunicipioDestino" id="idMunicipioDestino" class="form-control responsive-select"
                                     style="width: 100%;">
                                     <option value="0">Seleccionar...</option>
                                 </select>
