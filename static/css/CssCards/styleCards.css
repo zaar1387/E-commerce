@@ -13,6 +13,7 @@
     border-radius: 10px;
     margin: 10px; /* Espaciado entre tarjetas */
     flex: 1 1 300px; /* Permite que las tarjetas se ajusten */
+
 }
 .container .card .icon {
     position: absolute;
@@ -154,7 +155,7 @@ i {
 .card {
     position: relative;
     border-radius: 10px;
-    margin: 10px; /* Espaciado entre tarjetas */
+    margin: 5px; /* Espaciado entre tarjetas */
     flex: 1 1 300px; /* Permite que las tarjetas se ajusten */
     transition: transform 0.3s ease; /* Transición suave */
 }
@@ -164,3 +165,29 @@ i {
 .card.closed .face.face2 {
     transform: translateY(-100px); /* Mueve la cara 2 hacia arriba, oculta */
 }
+
+
+/* intentando disminuir el espacio entre el menú y los card: Añade estos estilos a tu CSS existente */
+
+/* Ajusta el margen inferior del título de sección */
+.section-heading {
+    margin-bottom: 20px; /* Reduce este valor según necesites */
+}
+
+/* Ajusta el margen superior del contenedor de las tarjetas */
+.row.clearfix[style] {
+    margin-top: 0 !important; /* Elimina cualquier margen superior */
+}
+
+/* Opcional: ajusta el padding del contenedor principal si es necesario */
+.container {
+    padding-top: 20px; /* Reduce este valor si hay mucho espacio arriba */
+    padding-bottom: 20px;
+}
+
+/* Asegúrate que el h2 no tenga márgenes excesivos */
+.section-title {
+    margin-top: 0;
+    margin-bottom: 0.5em; /* Ajusta este valor */
+}
+

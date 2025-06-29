@@ -556,13 +556,13 @@ a img:hover {
 /* 3. Fonts */
 /*------------------------------------------------------------------------------------------*/
 h1 {
-    padding: 20px 0;
+    padding: 50px 0;
 }
 h2 {
-    padding: 14px 0;
+    padding: 90px 0;
 }
 h3 {
-    padding: 10px 0;
+    padding: 50px 0;
 }
 h4 {
     padding: 7px 0;
@@ -1898,3 +1898,52 @@ blockquote {
     width: 250px; /* Ajusta el ancho de los cards según lo necesites */
     /* Puedes agregar más estilos aquí para personalizar los cards */
 }
+
+
+/* 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+
+
+.div3 {
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 4;
+}
+         */
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+
+
+
+
+
+.div6 {
+    grid-column: span 5 / span 5;
+}
+        
