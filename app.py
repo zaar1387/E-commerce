@@ -34,12 +34,6 @@ app.register_blueprint(Registrar)
 app.register_blueprint(Olvidocontrasenia)
 app.register_blueprint(IndexInterno) 
 app.register_blueprint(Mapa)
-# Token del bot 
-# token = "8001684220:AAFiTf0awnD3v4tsjCPGi4tTqf6_-wURrUs"
-# ID del chat
-# chat_id = 893903335
-# Crear un objeto Bot
-# bot = Bot(token=token)
 
 valid = False
 app.secret_key = 'mysecretkey'
