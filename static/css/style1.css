@@ -1715,6 +1715,7 @@ blockquote {
     }
     /*-----------------Header Elements-----------------*/
     #header .row {
+    #header .row {
         padding: 0 45px !important;
     }
     #header.nav-solid [class*="col-"] {
@@ -1899,12 +1900,50 @@ blockquote {
     /* Puedes agregar más estilos aquí para personalizar los cards */
 }
 
+
+/* 
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
 }
+    
+
+
+.div3 {
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 4;
+}
+         */
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+
+
+
+
+
 .div6 {
     grid-column: span 5 / span 5;
 }

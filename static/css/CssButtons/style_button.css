@@ -1,6 +1,7 @@
 /* Copyright (c) 2024 by Josh Dillon (https://codepen.io/jdillon/pen/ZYzBprB) */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap");
-html,
+
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap");
+html, */
 
 .radio-btn-group {
   margin: 10px;
