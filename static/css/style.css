@@ -224,7 +224,7 @@ section {
     position: absolute !important;
 }
 #header .row {
-    padding: 0;
+    padding: 50;
 }
 #header aside {
     text-align: right;
@@ -1908,4 +1908,8 @@ blockquote {
 .div6 {
     grid-column: span 5 / span 5;
 }
-        
+       
+
+
+/* ajuste menú */
+
