@@ -456,6 +456,8 @@ body {
     position: relative;
   }
 }
+
+/* permite cambiar el tamaño de la imagen al pasar el cursor sobre ella. Aquí tienes el código CSS para lograrlo: */
 .swiper-slide__block .swiper-slide__block__img img {
   width: 100%;
   height: auto;
@@ -688,25 +690,26 @@ body {
     background: linear-gradient(to top, #f2f3f3, rgba(248, 248, 248, 0));
   }
 }
-/* @media (min-width: 992px) {
+
+@media (min-width: 992px) {
   .section__slider .container__center {
     max-width: 1070px;
     width: 100%;
   }
-} */
+}
 
 /* responsive sliderppal */
-
+ /* cambia el tamaño del slider ppal no cambiar */
 .section__slider {
-  padding: 100px;
+  padding: 90px;
   background-color: #f9f9f9; /* Color de fondo opcional */
 }
 .container__center {
-  max-width: 1200px; /* Ancho máximo del contenedor */
+  max-width: 800px; /* Ancho máximo del contenedor */
   margin: 0 auto; /* Centrar el contenedor */
 }
 .swiper-container {
-  width: 100%; /* Asegúrate de que el contenedor del swiper ocupe el 100% del ancho */
+  width: 80%; /* Asegúrate de que el contenedor del swiper ocupe el 100% del ancho */
   height: auto; /* Permite que la altura se ajuste automáticamente */
 }
 .swiper-slide {

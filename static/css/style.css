@@ -246,7 +246,7 @@ section {
 #logo {
     float: left;
     height: 0px;
-    line-height: 60px; /*No mover*/
+    line-height: 50px; /*No mover*/
     margin-right: 15px;
 }
 #logo h1, #logo h2 {
@@ -264,9 +264,9 @@ section {
 }
 /* cambia el tamaño del logo, al momento de seleccionar el menú sección por ejemplo servivicio */
 #logo img {
-    max-height: 45px;
+    max-height: 15px;
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: 10x;
 }
 #navigation-logo {
     display: none;
@@ -442,7 +442,7 @@ section {
 #nav-trigger span:after {
     font-family: "fontAwesome";
     display: inline-block;
-    width: 38px;
+    width: 60px;   /*sube o baja el menu tipo amburguesa*/
     height: 0px;
     line-height: 50px; /*sube o baja el menu tipo amburguesa*/
     text-align: center;
