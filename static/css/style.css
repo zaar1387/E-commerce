@@ -262,9 +262,9 @@ section {
     font-size: 18px;
     padding: 0;
 }
-/* cambia el tamaño del logo, al momento de seleccionar el menú sección por ejemplo servivicio */
+/* cambia el tamaño del logo, al momento de seleccionar el menú sección por ejemplo servicio */
 #logo img {
-    max-height: 15px;
+    max-height: 20px;
     vertical-align: middle;
     margin-right: 10x;
 }

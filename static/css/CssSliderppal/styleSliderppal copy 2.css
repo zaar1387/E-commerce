@@ -1,0 +1,119 @@
+
+/* Estilos para el contenedor principal */
+.container__center {
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 0 15px; /* Espaciado lateral */
+}
+/* Estilos para el slider */
+.section__slider {
+  padding: 90px 0; /* Espaciado superior e inferior */
+  background-color: #ffffff; /* Color de fondo blanco */
+}
+/* Estilos para los slides */
+.swiper-container {
+  width: 100%; /* Asegura que el contenedor ocupe el 100% */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+.swiper-slide {
+  display: flex; /* Usar flexbox para alinear el contenido */
+  flex-direction: column; /* Alinear el contenido en columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  text-align: center; /* Centrar el texto */
+  padding: 20px; /* Espaciado interno */
+}
+/* Estilos para las imágenes en los slides */
+.swiper-slide__block__img img {
+  width: 100%; /* Hacer que las imágenes sean responsivas */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+}
+/* Estilos para los títulos y enlaces */
+.main__title, .main__subtitle, .paragraphe, .link {
+  margin: 10px 0; /* Espaciado entre los elementos de texto */
+}
+/* Estilos para los enlaces */
+.link {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+.link:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+/* Estilos para los botones de navegación del slider */
+.swiper-button-next, .swiper-button-prev {
+  color: #007bff; /* Color de las flechas */
+}
+/* Media Queries para responsividad */
+@media (min-width: 768px) {
+  .swiper-slide {
+    flex-direction: row; /* Cambiar a disposición en fila en pantallas más grandes */
+  }
+  
+  .swiper-slide__block {
+    flex: 1; /* Permitir que los bloques se expandan */
+    margin: 0 10px; /* Espaciado entre bloques */
+  }
+  .main__title {
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+  }
+  .main__subtitle {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+  }
+}
+@media (min-width: 1200px) {
+  .swiper-slide {
+    padding: 40px; /* Más espaciado en pantallas grandes */
+  }
+  .swiper-slide__block {
+    max-width: 600px; /* Ancho máximo de los bloques */
+    margin: 0 auto; /* Centrar los bloques */
+  }
+  .main__title {
+    font-size: 3em; /* Aumentar el tamaño del título en pantallas grandes */
+  }
+  .main__subtitle {
+    font-size: 1.8em; /* Aumentar el tamaño del subtítulo en pantallas grandes */
+  }
+  .paragraphe {
+    font-size: 1.2em; /* Aumentar el tamaño del texto del párrafo */
+  }
+}
+
+/* Estilos para los slides */
+.swiper-slide {
+  display: flex; /* Usar flexbox para alinear el contenido */
+  flex-direction: row; /* Alinear el contenido en fila */
+  align-items: center; /* Centrar verticalmente el contenido */
+  text-align: left; /* Alinear el texto a la izquierda */
+  padding: 20px; /* Espaciado interno */
+}
+/* Estilos para el bloque de imagen */
+.swiper-slide__block__img {
+  flex: 1; /* Permitir que la imagen ocupe el espacio necesario */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+/* Estilos para el bloque de texto */
+.swiper-slide__block__text {
+  flex: 1; /* Permitir que el texto ocupe el espacio necesario */
+}
+/* Estilos para las imágenes en los slides */
+.swiper-slide__block__img img {
+  width: 100%; /* Hacer que las imágenes sean responsivas */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+}
+/* Estilos para los títulos y enlaces */
+.main__title, .main__subtitle, .paragraphe, .link {
+  margin: 10px 0; /* Espaciado entre los elementos de texto */
+}
+/* Estilos para los enlaces */
+.link {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+.link:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
