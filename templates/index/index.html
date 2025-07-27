@@ -65,12 +65,12 @@
 <div id="wrapper">
  {% block body %}
     <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
+        <!-- <div id="header" class="nav-collapse">
             <div class="row clearfix">
                 <div class="col-1">
                     <div id="logo">
-                        <a href="/"><img src="static/images/logo.png" id="banner-logo" alt="Landing Page"/></a>
-                        <a href="/"><img src="static/images/logo-2.png" id="navigation-logo" alt="Landing Page"/></a>
+                        <h1 id="banner-logo"><img src="static/images/logo.png" alt="Logo Principal"></h1>
+                        <h2 id="navigation-logo"><img src="static/images/logo-2.png" alt="Logo de Navegación"></h2>
                     </div>
 
                     <nav id="nav-main">
@@ -120,7 +120,53 @@
                     <nav id="nav-mobile"></nav>
                 </div>
             </div>
+        </div> -->
+
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+                    <div id="logo">
+                        <h1 id="banner-logo"><img src="static/images/logo.png" alt="Logo Principal"></h1>
+                        <!-- <h2 id="navigation-logo"><img src="static/images/logo-2.png" alt="Logo de Navegación"></h2> -->
+                    </div>
+                    <nav id="nav-main">
+                        <ul>
+                            <li><a href="#content">Inicio</a></li>
+                            <li><a href="#Servicios">Servicios</a></li>
+                            <li><a href="#Reserva">Reservar servicio</a></li>
+                            <li><a href="#Visitas">Visitas al sitio</a></li>
+                            <li><a href="#gallery">Galería</a></li>
+                            <li><a href="#clients">Contactos</a></li>
+                            <li><a href="/login">Iniciar sesión</a></li>
+                        </ul>
+                    </nav>
+                    <aside>
+                        <ul class="social-icons1">
+                            <li>
+                                <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                                    <i class="fab fa-facebook"></i>
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                                    <i class="fab fa-instagram"></i>
+                                    <span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+
         
         <div id="index" class="row clearfix mb-3">
             <!-- <section class="section__slider">

@@ -149,9 +149,12 @@ section {
     padding-bottom: 85px !important;
 }
 /* Targets all elements */
+
+/* baja o mueve los titulos al momento de realizar el responsive sobre el front end */
+
 [class*='col-'] {
     float: left;
-    padding: 10px; /* Reducido para pantallas pequeñas */
+    padding: 40px; /* Reducido para pantallas pequeñas */
 }
 #clients .col-2-3 [class*='col-'] {
     padding: 0;
@@ -224,7 +227,7 @@ section {
     position: absolute !important;
 }
 #header .row {
-    padding: 0;
+    padding: 50;
 }
 #header aside {
     text-align: right;
@@ -238,10 +241,12 @@ section {
     margin: 0;
 }
 /* --------- 2.2 Logo ---------- */
+
+/* sube o baja el logo ppal */
 #logo {
     float: left;
-    height: 71px;
-    line-height: 66px;
+    height: 0px;
+    line-height: 50px; /*No mover*/
     margin-right: 15px;
 }
 #logo h1, #logo h2 {
@@ -257,10 +262,11 @@ section {
     font-size: 18px;
     padding: 0;
 }
+/* cambia el tamaño del logo, al momento de seleccionar el menú sección por ejemplo servicio */
 #logo img {
-    max-height: 22px;
+    max-height: 20px;
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: 10x;
 }
 #navigation-logo {
     display: none;
@@ -419,7 +425,7 @@ section {
 }
 #nav-trigger span {
     display: inline-block;
-    width: 38px;
+    width: 10px;
     height: 71px;
     color: #111;
     cursor: pointer;
@@ -436,9 +442,9 @@ section {
 #nav-trigger span:after {
     font-family: "fontAwesome";
     display: inline-block;
-    width: 38px;
-    height: 71px;
-    line-height: 75px;
+    width: 60px;   /*sube o baja el menu tipo amburguesa*/
+    height: 0px;
+    line-height: 50px; /*sube o baja el menu tipo amburguesa*/
     text-align: center;
     content: "\f0c9";
     border-top-right-radius: 5px;
@@ -1714,9 +1720,9 @@ blockquote {
         padding-left: 0;
     }
     /*-----------------Header Elements-----------------*/
+    /* permite mover el menú amburgueza a la izquierda o a la derecha */
     #header .row {
-    #header .row {
-        padding: 0 45px !important;
+        padding: 0 50px !important;
     }
     #header.nav-solid [class*="col-"] {
         padding: 0;
@@ -1843,11 +1849,14 @@ blockquote {
         padding-top: 45px !important;
     }
     /*-----------------Header Elements-----------------*/
+
+    /* Mueve adentro o afuera las palabras de la redes sociales */
+
     #header aside {
         display: inline-block;
         position: absolute;
         top: 40px;
-        right: 60px;
+        right: 70px;
         padding-top:3px;
         padding-right: 5px;
     }
@@ -1900,51 +1909,15 @@ blockquote {
     /* Puedes agregar más estilos aquí para personalizar los cards */
 }
 
-
-/* 
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
 }
-    
-
-
-.div3 {
-    grid-row-start: 2;
-}
-
-.div4 {
-    grid-row-start: 2;
-}
-
-.div5 {
-    grid-column: span 2 / span 2;
-    grid-row-start: 3;
-}
-
-.div6 {
-    grid-column: span 2 / span 2;
-    grid-row-start: 4;
-}
-         */
-
-
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
-    
-
-
-
-
-
 .div6 {
     grid-column: span 5 / span 5;
 }
-        
+       
+
+

@@ -264,7 +264,7 @@ section {
 }
 /* cambia el tamaño del logo, al momento de seleccionar el menú sección por ejemplo servicio */
 #logo img {
-    max-height: 20px;
+    max-height: 15px;
     vertical-align: middle;
     margin-right: 10x;
 }
