@@ -65,94 +65,70 @@
 <div id="wrapper">
  {% block body %}
     <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+
         <div id="header" class="nav-collapse">
             <div class="row clearfix">
                 <div class="col-1">
                     <div id="logo">
-                        <a href="/"><img src="static/images/logo.png" id="banner-logo" alt="Landing Page"/></a>
-                        <a href="/"><img src="static/images/logo-2.png" id="navigation-logo" alt="Landing Page"/></a>
+                        <h1 id="banner-logo"><img src="static/images/logo.png" alt="Logo Principal"></h1>
+                       
                     </div>
-
                     <nav id="nav-main">
                         <ul>
-                            <li>
-                                <a href="#content">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="#Servicios">Servicios</a>
-                            </li>
-                            <li>
-                                <a href="#Reserva">Reservar servicio</a>
-                            </li>
-                            <li>
-                                <a href="#Visitas">Visitas al sitio</a>
-                            </li>
-                            <li>
-                                <a href="#gallery">Galería</a>
-                            </li>
-                            <li>
-                                <a href="#clients">Contactos</a>
-                            </li>
-                            <li>
-                                <a href="/login">Iniciar sesion</a>
-                            </li>
+                            <li><a href="#content">Inicio</a></li>
+                            <li><a href="#Servicios">Servicios</a></li>
+                            <li><a href="#Reserva">Reservar servicio</a></li>
+                            <li><a href="#Visitas">Visitas al sitio</a></li>
+                            <li><a href="#gallery">Galería</a></li>
+                            <li><a href="#clients">Contactos</a></li>
+                            <li><a href="/login">Iniciar sesión</a></li>
                         </ul>
                     </nav>
-
-                     <aside>
+                    <aside>
                         <ul class="social-icons1">
                             <li>
                                 <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                                    <!-- <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>-->
-                                    <span>Facebook</span>
+                                    <i class="fab fa-facebook"></i>
+                                    <span></span>
                                 </a>
-                            </li> 
+                            </li>
                             <li>
                                 <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                                    <span>Instagram</span> 
+                                    <i class="fab fa-instagram"></i>
+                                    <span></span>
                                 </a>
                             </li>
                         </ul>
                     </aside>
-
                     <div id="nav-trigger"><span></span></div>
                     <nav id="nav-mobile"></nav>
                 </div>
             </div>
         </div>
-        
-        <div class="row clearfix">
+        <div id="index" class="row clearfix mb-3">
             <section class="section__slider">
                 <div class="container__center">
-                   <div class="swiper-container">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="swiper-slide__block">
-                                    <div class="swiper-slide__block__img" data-swiper-parallax-y="70%">
+                                    <div class="swiper-slide__block__img" data-swiper-parallax-y="100%">
                                         <a target="_blank" href="#">
-                                            <img src="https://images.unsplash.com/photo-1510709657750-f5a80fc8da9c?auto=format&amp;fit=crop&amp;w=1950&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
-                                                alt="">
+                                            <img src="static/images/slider/rin_slider1.png" alt="">
                                         </a>
                                     </div>
                                     <div class="swiper-slide__block__text">
-                                        <h1 data-swiper-parallax-x="-60%" class="main__title">Slider
-                                            <br>Two
-                                            <span>.</span>
-                                        </h1>
-                                        <h4 data-swiper-parallax-x="-50%" class="main__subtitle">Tagline
-                                            <span>• 2017</span>
-                                        </h4>
-                                        <p data-swiper-parallax-x="-40%" class="paragraphe">Lorem Ipsum is simply dummy text of
-                                            the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                                            dummy text.</p>
-                                        <a data-swiper-parallax-x="-30%" style="z-index: 5;" class="link" target="_blank"
+                                        <h1 data-swiper-parallax-x="-30%" class="main__title">Rin<br>16<span>.</span></h1>
+                                        <h4 data-swiper-parallax-x="-25%" class="main__subtitle">Tagline<span>• 2025</span></h4>
+                                        <p data-swiper-parallax-x="-20%" class="paragraphe">Modelo moderno, ajustado a tu vehículo.
+                                        </p>
+                                        <a data-swiper-parallax-x="-15%" style="z-index: 5;" class="link" target="_blank"
                                             href="#">viajes</a>
-                                        <span data-swiper-parallax-y="60%" class="number">2</span>
+                                        <span data-swiper-parallax-y="30%" class="number">2</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-button-next">
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </div>
@@ -173,7 +149,7 @@
                 <div class="row clearfix">
                     <div class="col-md-12">
                         <div class="section-heading text-center" style="margin-bottom: 2px;">
-                            <h2 class="section-title" style="margin: 0; padding: 0; line-height: 1.2;">Servicios</h2>
+                            <h2 class="section-title" style="margin: 0; padding: 0; line-height: 3.2;">Servicios</h2>
                         </div>
                     </div>
                     <div class="row clearfix"
@@ -248,7 +224,7 @@
                 <div class="row clearfix">
                     <div class="col-md-12">
                         <div class="section-heading text-center" style="margin-bottom: 5px;">
-                            <h2 class="section-title" style="margin: 0; padding: 0;">Reservar servicio</h2>
+                            <h2 class="section-title" style="margin: 0; padding: 0; line-height: 3.2;">Reservar servicio</h2>
                         </div>
                         <p class="text-justify mb-3" style="margin-top: 5px;">Diligencia los siguientes campos, con el fin de
                             conocer el
@@ -373,26 +349,7 @@
         
         <section id="Visitas" class="scrollto clearfix">
             <aside>
-            
-            
-                <!-- <div class="row clearfix" style="margin: 0; padding: 0;">
-                                <div class="col-12" style="padding: 0;">
-                                    <div class="section-heading text-center" style="margin-bottom: 8px;">
-                                        <h2 class="section-title" style="margin: 0; padding: 0; font-size: 1.5rem;">Visitas sitio web</h2>
-                                    </div>
-                                </div>
-                            
-                                <div class="col-12" style="padding: 0; margin: 0;">
-                                    <div id="map"
-                                        style="height: 400px; width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                                        <iframe id="mapFrame" src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}"
-                                            style="width: 100%; height: 100%; border: none; display: block;">
-                                        </iframe>
-                                    </div>
-                                </div>
-                            </div> -->
-            
-            
+
                 <style>
                     .clearfix {
                         margin: 0;
@@ -410,7 +367,7 @@
                 <div class="row clearfix">
                     <div class="col-md-12">
                         <div class="section-heading text-center compact-heading">
-                            <h2 class="section-title compact-title">Visitas sitio web</h2>
+                            <h2 class="section-title compact-title" style="margin: 0; padding: 0; line-height: 3.2;">Visitas sitio web</h2>
                         </div>
                     </div>
             
@@ -427,39 +384,12 @@
 
         <aside id="gallery" class="scrollto clearfix">
             <div class="container">
-                <!-- <div class="row clearfix">
-                    <div class="col-md-12">
-                        <div class="section-heading text-center">
-                            <h2 class="section-title">Galería</h2>
-                        </div>
-                    </div>
-                    <a href="static/images/gallery-images/gallery-image-1.jpg" data-featherlight="image"
-                        class="col-3 wow fadeIn" data-wow-delay="0.1s"><img
-                            src="static/images/gallery-images/gallery-image-1.jpg" alt="Landing Page" /></a>
-                    <a href="static/images/gallery-images/gallery-image-2.jpg" data-featherlight="image"
-                        class="col-3 wow fadeIn" data-wow-delay="0.3s"><img
-                            src="static/images/gallery-images/gallery-image-2.jpg" alt="Landing Page" /></a>
-                    <a href="static/images/gallery-images/gallery-image-3.jpg" data-featherlight="image"
-                        class="col-3 wow fadeIn" data-wow-delay="0.5s"><img
-                            src="static/images/gallery-images/gallery-image-3.jpg" alt="Landing Page" /></a>
-                    <a href="static/images/gallery-images/gallery-image-4.jpg" data-featherlight="image"
-                        class="col-3 wow fadeIn" data-wow-delay="1.1s"><img
-                            src="static/images/gallery-images/gallery-image-4.jpg" alt="Landing Page" /></a>
-                    <a href="static/images/gallery-images/gallery-image-5.jpg" data-featherlight="image"
-                        class="col-3 wow fadeIn" data-wow-delay="0.9s"><img
-                            src="static/images/gallery-images/gallery-image-5.jpg" alt="Landing Page" /></a>
-                    <a href="static/images/gallery-images/gallery-image-6.jpg" data-featherlight="image"
-                        class="col-3 wow fadeIn" data-wow-delay="0.7s"><img
-                            src="static/images/gallery-images/gallery-image-6.jpg" alt="Landing Page" /></a>
-                </div> -->
-
                 <div class="row clearfix">
                     <div class="col-12">
                         <div class="section-heading text-center" style="margin-bottom: 5px;">
-                            <h2 class="section-title" style="margin: 0; padding: 0;">Galería</h2>
+                            <h2 class="section-title" style="margin: 0; padding: 0; line-height: 3.2;">Galería</h2>
                         </div>
                     </div>
-                
                     <div class="col-12" style="margin-top: 10px; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
                         <a href="static/images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="wow fadeIn"
                             style="flex: 1 1 23%; min-width: 200px;" data-wow-delay="0.1s">
@@ -468,7 +398,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </aside>
       
@@ -477,42 +406,34 @@
                 <div class="row clearfix">
                     <div class="col-12">
                         <div class="section-heading text-center" style="margin-bottom: 5px;">
-                            <h2 class="section-title" style="margin: 0; padding: 0;">Contactos</h2>
+                            <h2 class="section-title" style="margin: 0; padding: 0; line-height: 3.2;">Contactos</h2>
                         </div>
                     </div>
                 
                     <div class="col-12"
                         style="margin-top: 10px; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
-                        <!-- Logo 1 -->
                         <a href="#" class="company-logo"
                             style="flex: 0 0 calc(16.666% - 15px); max-width: calc(16.666% - 15px); min-width: 120px;">
                             <img src="static/images/company-images/company-logo1.png" alt="Company"
                                 style="width: 100%; height: auto; object-fit: contain;" />
                             <div class="client-overlay"><span>Tree</span></div>
                         </a>
-                
-                        <!-- Logo 2 -->
                         <a href="#" class="company-logo"
                             style="flex: 0 0 calc(16.666% - 15px); max-width: calc(16.666% - 15px); min-width: 120px;">
                             <img src="static/images/company-images/company-logo2.png" alt="Company"
                                 style="width: 100%; height: auto; object-fit: contain;" />
                             <div class="client-overlay"><span>Fingerprint</span></div>
                         </a>
-                
-                        <!-- Logos 3 al 9 (mismo patrón) -->
                         <a href="#" class="company-logo"
                             style="flex: 0 0 calc(16.666% - 15px); max-width: calc(16.666% - 15px); min-width: 120px;">
                             <img src="static/images/company-images/company-logo3.png" alt="Company"
                                 style="width: 100%; height: auto; object-fit: contain;" />
                             <div class="client-overlay"><span>The Man</span></div>
                         </a>
-                
-                        <!-- Resto de logos... -->
                     </div>
                 </div>
             </div>
         </section>
-
     </body>
    
     <footer id="landing-footer" class="clearfix">

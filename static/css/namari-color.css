@@ -183,9 +183,11 @@ body {
 .section-title {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 34px; 
-    font-weight:700;
+    font-weight:500;
     color:#111;
 }
+
+
 
 .section-subtitle {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
