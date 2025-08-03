@@ -1918,6 +1918,11 @@ blockquote {
 .div6 {
     grid-column: span 5 / span 5;
 }
-       
+    
+.gallery-images {
+    margin-top: 50px; /* Ajusta este valor según lo necesites */
+}
 
-
+.visitas-html{
+    margin-top: 50px; /* Ajusta este valor según lo necesites */
+}

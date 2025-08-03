@@ -167,7 +167,7 @@
                             <div class="face face2">
                                 <div class="content" style="padding: 10px;">
                                     <h3 style="margin-top: 0;">
-                                        <a href="#" target="_blank">Asesoría Personalizada en Selección de Rines</a>
+                                        <a target="_blank">Asesoría Personalizada en Selección de Rines</a>
                                     </h3>
                                     <h4 style="margin-bottom: 0;">Te Ayudamos a elegir el rin ideal según tú vehículo (tamaño,
                                         diseño,
@@ -187,7 +187,7 @@
                             <div class="face face2">
                                 <div class="content" style="padding: 10px;">
                                     <h3 style="margin-top: 0;">
-                                        <a href="#" target="_blank">Instalación rines</a>
+                                        <a target="_blank">Instalación rines</a>
                                     </h3>
                                     <h4 style="margin-bottom: 0;">Si deseas, realizamos el montaje preciso de tal forma que se
                                         eviten
@@ -207,7 +207,7 @@
                             <div class="face face2">
                                 <div class="content" style="padding: 10px;">
                                     <h3 style="margin-top: 0;">
-                                        <a href="#" target="_blank">Venta + Kit Completo (Paquete)</a>
+                                        <a target="_blank">Venta + Kit Completo (Paquete)</a>
                                     </h3>
                                     <h4 style="margin-bottom: 0;">Ofrecemos paquetes que incluyen: rines + tapones de lujo</h4>
                                 </div>
@@ -354,19 +354,14 @@
                         margin: 0;
                         padding: 0;
                     }
-        
                     .map-container {
                         height: 50vh;
-                        /* Altura responsive */
                         width: 100%;
-                        /* Ancho completo */
                         max-width: 800px;
-                        /* Ancho máximo */
                         border-radius: 8px;
                         overflow: hidden;
                         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
                         margin: 20px auto;
-                        /* Margen superior e inferior para separación */
                     }
         
                     .section-heading {
@@ -378,19 +373,14 @@
                         padding: 0;
                         line-height: 1.2;
                         font-size: 2rem;
-                        /* Tamaño de fuente adaptable */
                     }
-        
-                    /* Estilos responsivos */
                     @media (max-width: 768px) {
                         .section-title {
                             font-size: 1.5rem;
-                            /* Tamaño de fuente más pequeño en pantallas pequeñas */
                         }
         
                         .map-container {
                             height: 40vh;
-                            /* Ajusta la altura en pantallas más pequeñas */
                         }
                     }
                 </style>
@@ -399,8 +389,8 @@
                         <div class="section-heading text-center">
                             <h2 class="section-title"><strong>Visitas</strong></h2>
                         </div>
-                    </div>
-                    <div class="col-md-12 mb-3" style="padding: 0;">
+                    </div><br><br><br><br>
+                    <div class="col-md-12 visitas-html" style="padding: 0;">
                         <div id="map" class="map-container">
                             <iframe id="mapFrame"
                                 src="{{ url_for('static', filename='mapa_con_marcadores.html') }}?{{ timestamp }}"
@@ -412,15 +402,18 @@
             </aside>
         </section>
 
+
         <aside id="gallery" class="scrollto clearfix">
             <div class="container">
                 <div class="row clearfix">
                     <div class="col-12">
                         <div class="section-heading text-center" style="margin-bottom: 5px;">
-                            <h2 class="section-title" style="margin: 0; padding: 0; line-height: 3.2;"><strong>Galería</strong></h2>
+                            <h2 class="section-title" style="margin: 0; padding: 0; line-height: 3.2;"><strong>Galería</strong>
+                            </h2>
                         </div>
                     </div>
-                    <div class="col-12" style="margin-top: 10px; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+                    <div class="col-12 gallery-images"
+                        style="margin-top: 20px; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
                         <a href="static/images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="wow fadeIn"
                             style="flex: 1 1 23%; min-width: 200px;" data-wow-delay="0.1s">
                             <img src="static/images/gallery-images/gallery-image-1.jpg" alt="Landing Page"
